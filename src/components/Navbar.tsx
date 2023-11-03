@@ -1,13 +1,14 @@
 import Image from "next/image";
+import logo from "public/assets/logo.svg";
 
 export default function Navbar() {
 	return (
 		<nav className="py-1 bg-light-yellow">
-			<div className="max-w-desktop mx-auto flex justify-between">
+			<div className="py-5 px-6 max-w-desktop mx-auto flex items-center justify-between xl:py-0 xl:px-0">
 				<div>
-					<Image src="/assets/logo.svg" width={150} height={52} alt="logo" />
+					<Image src={logo} alt="logo" className="w-3/5" />
 				</div>
-				<ul className="flex items-center font-medium">
+				<ul className="hidden xl:flex items-center font-medium">
 					<li className="mr-8 cursor-pointer">Services</li>
 					<li className="mr-8 cursor-pointer">About Us</li>
 					<li className="mr-8 cursor-pointer">Content Vault</li>
@@ -47,6 +48,9 @@ export default function Navbar() {
 						/>
 					</li>
 				</ul>
+				<div className="xl:hidden">
+					<Image src="/assets/hamburgerIcon.svg" height={24} width={24} alt="hamburger icon" />
+				</div>
 			</div>
 		</nav>
 	);

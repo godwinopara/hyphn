@@ -34,6 +34,10 @@ const config: Config = {
 			lineHeight: {
 				130: "130%",
 			},
+			screens: {
+				md: "767px",
+				lg: "1022px",
+			},
 		},
 	},
 	plugins: [],

@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import heroBg from "../../public/assets/herobg.svg";
+import Partners from "./Partners";
 
 export default function Hero() {
 	return (
-		<section className="min-h-[70vh] bg-light-yellow border border-black pt-10">
+		<section className="min-h-[70vh] bg-light-yellow border border-black pt-10 pb-9">
 			<div className="grid grid-cols-2 max-w-desktop mx-auto items-center">
 				<div className="border border-black mr-8">
 					<h1 className="font-bold text-50 leading-130">
@@ -22,6 +23,7 @@ export default function Hero() {
 					<Image src={heroBg} alt="hero background" />
 				</div>
 			</div>
+			<Partners />
 		</section>
 	);
 }

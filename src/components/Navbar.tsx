@@ -4,7 +4,7 @@ import logo from "public/assets/logo.svg";
 export default function Navbar() {
 	return (
 		<nav className="py-1 bg-light-yellow">
-			<div className="py-5 px-6 max-w-desktop mx-auto flex items-center justify-between xl:py-0 xl:px-0">
+			<div className="py-5 px-6 max-w-desktop mx-auto flex items-center justify-between xl:py-2 xl:px-0">
 				<div>
 					<Image src={logo} alt="logo" className="w-3/5" />
 				</div>
@@ -14,7 +14,7 @@ export default function Navbar() {
 					<li className="mr-8 cursor-pointer">Content Vault</li>
 					<li className="mr-8 cursor-pointer">Portfolio</li>
 					<li className="mr-8 cursor-pointer">Contact Us</li>
-					<li className="mr-8 cursor-pointer border border-solid border-yellow rounded-lg py-2.5 px-3">
+					<li className="mr-8 cursor-pointerborder-yellow rounded-lg py-2.5 px-3">
 						Book a meeting
 					</li>
 					<li className="flex items-center justify-between">

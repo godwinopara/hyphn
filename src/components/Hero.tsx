@@ -5,13 +5,13 @@ import Partners from "./Partners";
 
 export default function Hero() {
 	return (
-		<section className="min-h-[70vh] bg-light-yellow border border-black pt-8 pb-5 xl:pt-10 xl:pb-9">
-			<div className=" max-w-desktop mx-auto px-6 xl:px-0 xl:grid xl:grid-cols-2 xl:items-center">
-				<div className="border border-black text-center mb-14 xl:mb-0 xl:text-left xl:mr-8">
-					<h1 className="font-bold leading-130 text-2xl xl:text-50 ">
+		<section className="xl:min-h-[70vh] bg-light-yellow pt-8 pb-5 xl:pt-10 xl:pb-9">
+			<div className=" max-w-desktop mx-auto px-6 xl:px-0 lg:grid lg:grid-cols-2 lg:items-center">
+				<div className="text-center mb-14 lg:mb-0 lg:text-left lg:mr-8">
+					<h1 className="font-bold leading-130 text-2xl md:text-40  xl:text-50 ">
 						Increase Your Customers Loyalty and Brand Satisfaction
 					</h1>
-					<p className=" mt-3 mb-9 xl:text-xl">
+					<p className=" mt-3 mb-9 md:text-lg xl:text-xl">
 						We deliver expert content marketing strategies for our clients with our engaging
 						articles, social media, PR, market analysis and videos.
 					</p>
@@ -19,7 +19,7 @@ export default function Hero() {
 						Get Started
 					</button>
 				</div>
-				<div className="border border-black">
+				<div>
 					<Image src={heroBg} alt="hero background" />
 				</div>
 			</div>

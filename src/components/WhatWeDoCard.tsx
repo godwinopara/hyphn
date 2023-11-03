@@ -10,7 +10,7 @@ interface WhatWeDoCardProps {
 
 export default function WhatWeDoCard({ img, title, description }: WhatWeDoCardProps) {
 	return (
-		<div className="py-10 flex flex-col items-center justify-center text-center mt-8 md:text-left border md: px-4">
+		<div className="py-10  flex flex-col items-center justify-center text-center mt-8 md:text-left md: px-4">
 			<div className="bg-light-yellow p-6 rounded-2xl mb-3 md:mr-auto">
 				<Image src={img} alt="content creation icon" />
 			</div>

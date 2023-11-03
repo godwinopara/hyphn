@@ -40,6 +40,10 @@ const config: Config = {
 				md: "767px",
 				lg: "1022px",
 			},
+			backgroundImage: {
+				openHub: "url('/assets/openHub.png')",
+				skyside: "url('/assets/skyside.png')",
+			},
 		},
 	},
 	plugins: [],

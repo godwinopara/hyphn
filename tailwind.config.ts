@@ -15,10 +15,12 @@ const config: Config = {
 				brown: "#462F00",
 				black: "#101010",
 				white2: "#F9F9F9",
+				gray: "#c4c4c47f",
 			},
 			spacing: {
 				2.5: "0.625rem",
 				7.5: "1.875rem",
+				17: "4.4375rem",
 			},
 			fontSize: {
 				50: "3.125rem",

@@ -14,7 +14,7 @@ export default function PortfolioCard({ img, title, description }: PortfolioCard
 			</div>
 			<div>
 				<h3 className="font-semibold mb-2 lg:text-2xl">{title}</h3>
-				<p className="text-sm lg:text-base md:w-[90%] lg:w-full xl:w-4/5">{description}</p>
+				<p className="text-sm lg:text-base md:w-[90%] lg:w-full xl:w-[85%]">{description}</p>
 			</div>
 		</div>
 	);

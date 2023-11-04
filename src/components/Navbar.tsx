@@ -6,7 +6,7 @@ export default function Navbar() {
 		<nav className="py-1 bg-light-yellow">
 			<div className="py-5 px-6 max-w-desktop mx-auto flex items-center justify-between xl:py-2 xl:px-0">
 				<div>
-					<Image src={logo} alt="logo" className="w-3/5" />
+					<Image src={logo} alt="logo" className="w-3/5 lg:w-full" />
 				</div>
 				<ul className="hidden xl:flex items-center font-medium">
 					<li className="mr-8 cursor-pointer">Services</li>

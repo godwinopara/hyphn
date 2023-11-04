@@ -6,7 +6,7 @@ import PortfolioCard from "./PortfolioCard";
 
 export default function Portfolio() {
 	return (
-		<section className="pt-17 px-6 max-w-desktop mx-auto">
+		<section className="pt-17 px-6 max-w-desktop mx-auto lg:px-0">
 			<div className="text-center mb-14 xl:text-left">
 				<h2 className="text-yellow text-2xl font-semibold mb-3">OUR PORTFOLIO</h2>
 				<p className="font-semibold md:text-3xl md:w-4/5 md:mx-auto xl:w-[45%] xl:m-0">

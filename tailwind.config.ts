@@ -16,6 +16,8 @@ const config: Config = {
 				black: "#101010",
 				white2: "#F9F9F9",
 				gray: "#c4c4c47f",
+				gray2: "#8B8B8B",
+				green: "#20B15A",
 			},
 			spacing: {
 				2.5: "0.625rem",

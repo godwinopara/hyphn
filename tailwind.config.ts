@@ -16,6 +16,7 @@ const config: Config = {
 				black: "#101010",
 				white2: "#F9F9F9",
 				gray: "#c4c4c47f",
+				"light-gray": "#E6E4FF",
 				gray2: "#8B8B8B",
 				green: "#20B15A",
 			},
@@ -45,6 +46,9 @@ const config: Config = {
 			backgroundImage: {
 				openHub: "url('/assets/openHub.png')",
 				skyside: "url('/assets/skyside.png')",
+			},
+			boxShadow: {
+				"3xl": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
 			},
 		},
 	},

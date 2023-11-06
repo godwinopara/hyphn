@@ -1,6 +1,6 @@
 export default function Subscribe() {
 	return (
-		<section className="max-w-2xl mx-auto text-center px-6 py-20">
+		<section className="max-w-2xl mx-auto text-center px-6 py-20 mb-20 ">
 			<div>
 				<h2 className="text-green font-semibold text-2xl mb-3 lg:font-medium">SUBSCRIBE</h2>
 			</div>

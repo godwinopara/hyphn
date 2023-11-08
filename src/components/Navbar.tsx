@@ -12,7 +12,7 @@ export default function Navbar() {
 					<li className="mr-8 cursor-pointer">Services</li>
 					<li className="mr-8 cursor-pointer">About Us</li>
 					<li className="mr-8 cursor-pointer">Content Vault</li>
-					<li className="mr-8 cursor-pointer">Portfolio</li>
+					<li className="mr-8 cursor-pointer">Our Team</li>
 					<li className="mr-8 cursor-pointer">Contact Us</li>
 					<li className="mr-8 cursor-pointer border-yellow rounded-lg py-2.5 px-3">
 						Book a meeting

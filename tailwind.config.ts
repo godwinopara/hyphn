@@ -14,10 +14,12 @@ const config: Config = {
 				"mid-yellow": "#EEDAB0",
 				brown: "#462F00",
 				black: "#101010",
-				white2: "#F9F9F9",
+				white2: "#F8FFF9",
 				gray: "#c4c4c47f",
 				"light-gray": "#E6E4FF",
 				gray2: "#8B8B8B",
+				gray3: "#8A8A8A",
+				gray4: "#CECECE",
 				green: "#20B15A",
 			},
 			spacing: {
@@ -46,6 +48,7 @@ const config: Config = {
 			backgroundImage: {
 				openHub: "url('/assets/openHub.png')",
 				skyside: "url('/assets/skyside.png')",
+				content: "url('/assets/content.jpg')",
 			},
 			boxShadow: {
 				"3xl": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",

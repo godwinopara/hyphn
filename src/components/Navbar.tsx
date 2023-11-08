@@ -14,7 +14,7 @@ export default function Navbar() {
 					<li className="mr-8 cursor-pointer">Content Vault</li>
 					<li className="mr-8 cursor-pointer">Portfolio</li>
 					<li className="mr-8 cursor-pointer">Contact Us</li>
-					<li className="mr-8 cursor-pointerborder-yellow rounded-lg py-2.5 px-3">
+					<li className="mr-8 cursor-pointer border-yellow rounded-lg py-2.5 px-3">
 						Book a meeting
 					</li>
 					<li className="flex items-center justify-between">

@@ -8,11 +8,20 @@ import raise from "public/assets/raise.svg";
 import timeline from "public/assets/timeline.svg";
 import AchievementCard from "./AchievementCard";
 
+// import one from "public/assets/one.svg";
+
 export default function WhatWeDo() {
 	return (
-		<section className="pt-11 ">
+		<section className="pt-11">
 			<div className="px-6 max-w-desktop mx-auto lg:pb-32 lg:px-0">
-				<div className="text-center mb-10 md:text-left">
+				<div
+					className="text-center mb-10 md:text-left"
+					data-aos="fade-up"
+					data-aos-offset="200"
+					data-aos-delay="20"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+				>
 					<h2 className="text-xl text-yellow font-semibold mb-3 md:text-xl md:font-medium">
 						WHAT WE DO
 					</h2>
@@ -20,26 +29,35 @@ export default function WhatWeDo() {
 						We create engaging content that works for you and explains your brand
 					</p>
 				</div>
-				<div className="md:grid grid-cols-3 gap-5">
+				<div className="md:grid grid-cols-2 gap-2 lg:grid-cols-4">
 					<WhatWeDoCard
 						img={contentImg}
 						title="Create Content"
 						description="We help identify the best ways to improve your business"
+						duration="700"
 					/>
 
 					<WhatWeDoCard
 						img={heartImg}
-						title="Improve brand loyalty"
+						title="Strategy Consulting"
 						description="We help identify the best ways to improve your business"
+						duration="1000"
 					/>
 					<WhatWeDoCard
 						img={workImg}
-						title="Improve Business Model"
+						title="Social Media"
 						description="We help identify the best ways to improve your business"
+						duration="1500"
+					/>
+					<WhatWeDoCard
+						img={workImg}
+						title="Copy Writing"
+						description="We help identify the best ways to improve your business"
+						duration="2000"
 					/>
 				</div>
 			</div>
-			<div className="pt-17 bg-light-yellow md:pb-17">
+			<div className="pt-17 bg-black md:pb-17">
 				<div className="px-6 md:grid md:grid-cols-4 gap-4 max-w-desktop mx-auto lg:px-0">
 					<AchievementCard icon={projectPlan} title="Completed Projects" rating="150 +" />
 					<AchievementCard icon={rating} title="Customer Satisfaction" rating="60%" />

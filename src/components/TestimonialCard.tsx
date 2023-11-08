@@ -5,7 +5,7 @@ import customer from "public/assets/customer.png";
 
 export default function TestimonialCard() {
 	return (
-		<ul className="p-10 shadow-lg mb-10 rounded-3xl mr-10">
+		<ul className="p-10 shadow-lg mb-10 rounded-3xl md:mr-10">
 			<li className="mb-5">
 				Thank You for your service. I am very pleased with the result. I have seen exponencial
 				growth in my business and its all thanks to your amazing service

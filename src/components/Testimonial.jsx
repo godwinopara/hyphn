@@ -28,7 +28,7 @@ const responsive = {
 
 export default function Testimonial() {
 	const [activeIndex, setActiveIndex] = useState(0);
-	const [disablePrev, setDisablePrev] = useState(false);
+	const [disablePrev, setDisablePrev] = useState(true);
 	const [disableNext, setDisableNext] = useState(false);
 
 	const carousel = useRef(null);
@@ -52,11 +52,11 @@ export default function Testimonial() {
 	};
 
 	return (
-		<section className="max-w-desktop mx-auto mb-20 pt-28 relative sha">
+		<section className="max-w-desktop mx-auto mb-20 pt-28 relative px-6 lg:px-0">
 			<div className="mb-24 flex items-center justify-between">
 				<div>
-					<h2 className="text-yellow text-xl mb-6">TESTIMONIAL</h2>
-					<strong className="text-3xl">Our Happy Customer</strong>
+					<h2 className="text-yellow md:text-xl mb-6">TESTIMONIAL</h2>
+					<strong className="text-2xl md:text-3xl">Our Happy Customer</strong>
 				</div>
 
 				<div key="btns" className="flex">

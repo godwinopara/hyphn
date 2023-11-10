@@ -12,9 +12,9 @@ export default function Navbar() {
 					<li className="mr-8 cursor-pointer hover:text-yellow">Services</li>
 					<li className="mr-8 cursor-pointer hover:text-yellow">About Us</li>
 					<li className="mr-8 cursor-pointer hover:text-yellow">Content Vault</li>
-					<li className="mr-8 cursor-pointer">Our Team</li>
-					<li className="mr-8 cursor-pointer">Contact Us</li>
-					<li className="mr-8 cursor-pointer border border-white rounded-lg py-2.5 px-3">
+					<li className="mr-8 cursor-pointer hover:text-yellow">Our Team</li>
+					<li className="mr-8 cursor-pointer hover:text-yellow">Contact Us</li>
+					<li className="mr-8 cursor-pointer border border-white rounded-lg py-2.5 px-3 hover:bg-yellow">
 						Book a meeting
 					</li>
 					<li className="flex items-center justify-between">

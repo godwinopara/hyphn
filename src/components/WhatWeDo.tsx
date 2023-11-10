@@ -57,13 +57,14 @@ export default function WhatWeDo() {
 					/>
 				</div>
 			</div>
-			<div className="pt-17 bg-black md:pb-17">
-				<div className="px-6 md:grid md:grid-cols-4 gap-4 max-w-desktop mx-auto lg:px-0">
+			<div className="pt-[98px] bg-black md:pb-[98px] relative ">
+				<div className="px-6 md:flex md:justify-between max-w-desktop mx-auto lg:px-0">
 					<AchievementCard icon={projectPlan} title="Completed Projects" rating="150 +" />
 					<AchievementCard icon={rating} title="Customer Satisfaction" rating="60%" />
 					<AchievementCard icon={raise} title="Raised by Clients" rating="$12M" />
 					<AchievementCard icon={timeline} title="Years in Business" rating="7 yrs" />
 				</div>
+				<div className="absolute    -bottom-[15%] -right-[20%] bg-patternRight bg-no-repeat bg-center h-[400px] w-full"></div>
 			</div>
 		</section>
 	);

@@ -8,7 +8,7 @@ import arrow from "public/assets/arrow-white.svg";
 
 export default function ContentVault() {
 	return (
-		<section className="bg-black border border-black py-16">
+		<section className="bg-black border border-black py-16 relative">
 			<div className="max-w-desktop mx-auto">
 				<div className="mb-6">
 					<h2 className="text-yellow font-medium text-xl mb-6">CONTENT VAULT</h2>
@@ -39,11 +39,13 @@ export default function ContentVault() {
 				</div>
 
 				<div className="text-white flex justify-center mt-10">
-					<button className="flex items-center justify-center gap-3 py-4 px-5 hover:bg-yellow rounded-lg">
+					<button className="flex items-center justify-center gap-3 z-10 py-4 px-5 hover:bg-yellow rounded-lg">
 						Learn More <Image src={arrow} alt="arrow" />
 					</button>
 				</div>
 			</div>
+
+			<div className="absolute -bottom-[5px] -left-[20%] bg-patternLeft bg-no-repeat bg-center h-[300px] w-full"></div>
 		</section>
 	);
 }

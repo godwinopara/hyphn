@@ -9,7 +9,7 @@ interface ContentVaultCardProps {
 
 export default function ContentVaultCard({ img, section, title, date }: ContentVaultCardProps) {
 	return (
-		<div>
+		<div className="z-10">
 			<Image src={img} alt="an image that represents a radio" className="h-60 object-cover" />
 			<div className="px-10 py-8 bg-white h-44">
 				<span className="block mb-2 text-gray3 leading-130">{section}</span>

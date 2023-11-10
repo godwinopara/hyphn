@@ -9,17 +9,16 @@ interface WhatWeDoCardProps {
 	duration: string;
 }
 
+// data-aos="fade-up"
+// data-aos-offset="200"
+// data-aos-delay="50"
+// data-aos-duration={duration}
+// data-aos-easing="ease-in-out"
+
 export default function WhatWeDoCard({ img, title, description, duration }: WhatWeDoCardProps) {
 	return (
-		<div
-			className="py-10  flex flex-col items-center justify-center text-center mt-8 md:text-left md:px-4 lg:items-start"
-			data-aos="fade-up"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration={duration}
-			data-aos-easing="ease-in-out"
-		>
-			<div className="bg-light-yellow p-6 rounded-2xl mb-3 md:mr-auto">
+		<div className="py-10 bg-white1 rounded-3xl  flex flex-col items-center justify-center text-center mt-8 md:text-left md:px-4 lg:items-start xl:px-16">
+			<div className="bg-light-yellow p-6 rounded-2xl mb-6 md:mr-auto">
 				<Image src={img} alt="content creation icon" />
 			</div>
 			<div className="mb-9">

@@ -15,6 +15,7 @@ const config: Config = {
 				brown: "#462F00",
 				black: "#101010",
 				white2: "#F8FFF9",
+				white1: "#f9f9f9",
 				gray: "#c4c4c47f",
 				"light-gray": "#E6E4FF",
 				gray2: "#8B8B8B",

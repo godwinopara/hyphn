@@ -15,7 +15,7 @@ export default function WhatWeDo() {
 		<section className="pt-11">
 			<div className="px-6 max-w-desktop mx-auto lg:pb-32 lg:px-0">
 				<div
-					className="text-center mb-10 md:text-left"
+					className="text-center mb-6 md:text-left"
 					data-aos="fade-up"
 					data-aos-offset="200"
 					data-aos-delay="20"
@@ -23,36 +23,36 @@ export default function WhatWeDo() {
 					data-aos-easing="ease-in-out"
 				>
 					<h2 className="text-xl text-yellow font-semibold mb-3 md:text-xl md:font-medium">
-						WHAT WE DO
+						SERVICES
 					</h2>
 					<p className="font-medium md:text-3xl md:font-semibold md:w-[62%] lg:w-1/2 xl:w-[35%]">
-						We create engaging content that works for you and explains your brand
+						What we do
 					</p>
 				</div>
-				<div className="md:grid grid-cols-2 gap-2 lg:grid-cols-4">
+				<div className="md:grid grid-cols-2 gap-6 lg:grid-cols-2">
 					<WhatWeDoCard
 						img={contentImg}
-						title="Create Content"
-						description="We help identify the best ways to improve your business"
+						title="TV Content"
+						description="In the digital age, online platforms hold immense potential to reach audiences globally. At Hyphn, our digital content experts leverage their skills to produce compelling videos, engaging social media campaigns, informative blog posts, interactive websites, and more, enabling you to connect with your target audience across various digital channels."
 						duration="700"
 					/>
 
 					<WhatWeDoCard
 						img={heartImg}
-						title="Strategy Consulting"
-						description="We help identify the best ways to improve your business"
+						title="Radio Content"
+						description="In the digital age, online platforms hold immense potential to reach audiences globally. At Hyphn, our digital content experts leverage their skills to produce compelling videos, engaging social media campaigns, informative blog posts, interactive websites, and more, enabling you to connect with your target audience across various digital channels."
 						duration="1000"
 					/>
 					<WhatWeDoCard
 						img={workImg}
-						title="Social Media"
-						description="We help identify the best ways to improve your business"
+						title="Digital Content"
+						description="In the digital age, online platforms hold immense potential to reach audiences globally. At Hyphn, our digital content experts leverage their skills to produce compelling videos, engaging social media campaigns, informative blog posts, interactive websites, and more, enabling you to connect with your target audience across various digital channels."
 						duration="1500"
 					/>
 					<WhatWeDoCard
 						img={workImg}
-						title="Copy Writing"
-						description="We help identify the best ways to improve your business"
+						title="Experiential Content"
+						description="We believe in creating immersive experiences that go beyond traditional marketing formats. Our team conceptualizes innovative experiential events and activations that leave a lasting impression on your customers. From themed events to interactive displays, we ensure your brand is unforgettable.."
 						duration="2000"
 					/>
 				</div>

@@ -5,7 +5,7 @@ import Partners from "@/components/Partners";
 
 export default function Hero() {
 	return (
-		<section className="xl:min-h-[70vh] bg-black pt-8 pb-5 xl:pt-10 xl:pb-9">
+		<section className="xl:min-h-screen bg-black pt-10  pb-5 xl:pt-16 xl:pb-0 xl:mt-[4.85rem]">
 			<div className=" max-w-desktop mx-auto px-6 xl:px-0 lg:grid lg:grid-cols-2 lg:items-center">
 				<div
 					className="text-center text-white mb-14 lg:mb-0 lg:text-left lg:mr-8"

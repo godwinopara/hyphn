@@ -3,12 +3,12 @@ import logo from "public/assets/logo.svg";
 
 export default function Navbar() {
 	return (
-		<nav className="py-1 bg-light-yellow">
+		<nav className="py-1 bg-black fixed w-full z-10 top-0 left-0 ">
 			<div className="py-5 px-6 max-w-desktop mx-auto flex items-center justify-between xl:py-2 xl:px-0">
 				<div>
 					<Image src={logo} alt="logo" className="w-3/5 lg:w-full" />
 				</div>
-				<ul className="hidden xl:flex items-center font-medium">
+				<ul className="hidden xl:flex items-center font-medium text-white">
 					<li className="mr-8 cursor-pointer">Services</li>
 					<li className="mr-8 cursor-pointer">About Us</li>
 					<li className="mr-8 cursor-pointer">Content Vault</li>

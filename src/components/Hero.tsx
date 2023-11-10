@@ -5,7 +5,7 @@ import Partners from "@/components/Partners";
 
 export default function Hero() {
 	return (
-		<section className="xl:min-h-screen bg-black pt-10  pb-5 xl:pt-16 xl:pb-0 xl:mt-[4.85rem]">
+		<section className="xl:min-h-screen bg-black pt-10  pb-5 xl:pt-16 xl:pb-0 xl:mt-[4.85rem] relative">
 			<div className=" max-w-desktop mx-auto px-6 xl:px-0 lg:grid lg:grid-cols-2 lg:items-center">
 				<div
 					className="text-center text-white mb-14 lg:mb-0 lg:text-left lg:mr-8"
@@ -35,6 +35,10 @@ export default function Hero() {
 				>
 					<Image src={heroBg} alt="hero background" />
 				</div>
+			</div>
+			<div>
+				<div className="absolute top-0 left-[40%] bg-contain bg-no-repeat bg-heroPattern h-[555.291px] w-[545.595px]"></div>
+				<div className="absolute bottom-0 right-0 bg-heroPattern2 h-[673.833px] w-[471.46px]"></div>
 			</div>
 			<Partners />
 		</section>

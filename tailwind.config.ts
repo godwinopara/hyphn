@@ -50,6 +50,8 @@ const config: Config = {
 				openHub: "url('/assets/openHub.png')",
 				skyside: "url('/assets/skyside.png')",
 				content: "url('/assets/content.jpg')",
+				heroPattern: "url('/assets/bg-design.svg')",
+				heroPattern2: "url('/assets/bg-design2.svg')",
 			},
 			boxShadow: {
 				"3xl": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",

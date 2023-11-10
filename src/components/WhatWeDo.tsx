@@ -33,26 +33,26 @@ export default function WhatWeDo() {
 					<WhatWeDoCard
 						img={contentImg}
 						title="TV Content"
-						description="In the digital age, online platforms hold immense potential to reach audiences globally. At Hyphn, our digital content experts leverage their skills to produce compelling videos, engaging social media campaigns, informative blog posts, interactive websites, and more, enabling you to connect with your target audience across various digital channels."
+						description="Our team of talented creatives specializes in producing engaging television content that informs and entertains."
 						duration="700"
 					/>
 
 					<WhatWeDoCard
 						img={heartImg}
 						title="Radio Content"
-						description="In the digital age, online platforms hold immense potential to reach audiences globally. At Hyphn, our digital content experts leverage their skills to produce compelling videos, engaging social media campaigns, informative blog posts, interactive websites, and more, enabling you to connect with your target audience across various digital channels."
+						description="With years of experience in radio broadcasting, our team knows how to create impactful audio content that captivates listeners."
 						duration="1000"
 					/>
 					<WhatWeDoCard
 						img={workImg}
 						title="Digital Content"
-						description="In the digital age, online platforms hold immense potential to reach audiences globally. At Hyphn, our digital content experts leverage their skills to produce compelling videos, engaging social media campaigns, informative blog posts, interactive websites, and more, enabling you to connect with your target audience across various digital channels."
+						description="In the digital age, online platforms hold immense potential to reach audiences globally.."
 						duration="1500"
 					/>
 					<WhatWeDoCard
 						img={workImg}
 						title="Experiential Content"
-						description="We believe in creating immersive experiences that go beyond traditional marketing formats. Our team conceptualizes innovative experiential events and activations that leave a lasting impression on your customers. From themed events to interactive displays, we ensure your brand is unforgettable.."
+						description="We believe in creating immersive experiences that go beyond traditional marketing formats."
 						duration="2000"
 					/>
 				</div>

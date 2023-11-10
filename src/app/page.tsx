@@ -1,4 +1,5 @@
 // import ContentVault from "@/components/ContentVault";
+import ContentVault from "@/components/ContentVault";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import OurTeam from "@/components/OurTeam";
@@ -13,6 +14,7 @@ export default function Home() {
 				<Hero />
 				<WhatWeDo />
 				<OurTeam />
+				<ContentVault />
 				<Testimonial />
 				<Subscribe />
 			</main>

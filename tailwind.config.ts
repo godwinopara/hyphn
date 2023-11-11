@@ -14,6 +14,7 @@ const config: Config = {
 				"mid-yellow": "#EEDAB0",
 				brown: "#462F00",
 				black: "#101010",
+				black2: "#1a1a1a",
 				white2: "#F8FFF9",
 				white1: "#f9f9f9",
 				gray: "#c4c4c47f",
@@ -31,6 +32,7 @@ const config: Config = {
 			fontSize: {
 				50: "3.125rem",
 				40: "2.5rem",
+				42: "2.625rem",
 				33: "2.062rem",
 				28: "1.750rem",
 				23: "1.438rem",

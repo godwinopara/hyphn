@@ -11,7 +11,7 @@ export default function AboutTeam() {
 					<Image
 						src={underline}
 						alt="zig zag underline"
-						className="left-[5%] absolute top-12 xl:left-[38%]"
+						className="left-[5%] absolute top-14 md:left-[30%] xl:left-[38%]"
 					/>
 				</div>
 				<p className="text-xl xl:text-3xl leading-130">

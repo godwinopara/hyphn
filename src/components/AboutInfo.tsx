@@ -3,12 +3,13 @@ import customization from "public/assets/customization.svg";
 import quality from "public/assets/quality.svg";
 import Image from "next/image";
 import WhyChooseUsCard from "./WhyChooseUsCard";
+import underline from "public/assets/underline.svg";
 
 export default function AboutInfo() {
 	return (
 		<section className="px-6 xl:px-0 py-16 max-w-desktop mx-auto">
 			<div className="text-center mb-17">
-				<h2 className="text-3xl text-yellow xl:text-42 font-bold leading-130 mb-6">
+				<h2 className="text-3xl text-yellow md:text-42 font-bold leading-130 mb-6">
 					Crafting Content Excellence
 				</h2>
 				<p className="leading-130 max-w-[827px] mx-auto">
@@ -19,9 +20,16 @@ export default function AboutInfo() {
 			</div>
 
 			<div>
-				<h2 className="text-3xl text-center xl:text-42 font-bold leading-130 text-yellow mb-12">
-					Why Choose Hyphn
-				</h2>
+				<div className="relative">
+					<h2 className="text-3xl text-center md:text-42 font-bold leading-130 text-yellow mb-28">
+						Why Choose Hyphn
+					</h2>
+					<Image
+						src={underline}
+						alt="zig zag underline"
+						className="left-[5%] absolute top-16 md:left-[30%] xl:left-[38%]"
+					/>
+				</div>
 				<div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
 					<WhyChooseUsCard
 						img={expertise}

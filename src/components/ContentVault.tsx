@@ -8,13 +8,15 @@ import arrow from "public/assets/arrow-white.svg";
 
 export default function ContentVault() {
 	return (
-		<section className="bg-black border border-black py-16 relative">
+		<section className="px-6 bg-black border border-black py-16 relative xl:px-0">
 			<div className="max-w-desktop mx-auto">
 				<div className="mb-6">
 					<h2 className="text-yellow font-medium text-xl mb-6">CONTENT VAULT</h2>
-					<p className="text-white1 text-3xl font-semibold">Take a sneak pick of what we have</p>
+					<p className="text-2xl text-white1 md:text-3xl font-semibold">
+						Take a sneak pick of what we have
+					</p>
 				</div>
-				<div className="grid grid-cols-4 gap-8 bg-black">
+				<div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 bg-black">
 					<ContentVaultCard img={radio} section="RADIO" title="World of Hero" date="16 July 2023" />
 
 					<ContentVaultCard

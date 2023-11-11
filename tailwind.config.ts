@@ -54,6 +54,8 @@ const config: Config = {
 				heroPattern2: "url('/assets/bg-design2.svg')",
 				patternRight: "url('/assets/patternRight.svg')",
 				patternLeft: "url('/assets/patternLeft.svg')",
+				aboutHero: "url('/assets/aboutHero.png')",
+				darkGradient: "linear-gradient(269deg, rgba(16, 16, 16, 0.54) -2.71%, #101010 92.77%)",
 			},
 			boxShadow: {
 				"3xl": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",

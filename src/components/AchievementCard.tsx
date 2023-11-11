@@ -8,7 +8,7 @@ interface CompletedProjectCardProps {
 
 export default function CompletedProjectCard({ icon, title, rating }: CompletedProjectCardProps) {
 	return (
-		<div className="border-r text-white border-white last:border-none  w-full  flex justify-center items-center text-center ">
+		<div className="mb-20 text-white md:mb-0  md:border-r  lg:border-white last:border-none  w-full  flex justify-center items-center text-center ">
 			<div className="px-10">
 				<div className="mb-2.5 flex justify-center">
 					<Image src={icon} alt="Rating" />

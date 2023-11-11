@@ -13,7 +13,7 @@ import AchievementCard from "./AchievementCard";
 export default function WhatWeDo() {
 	return (
 		<section className="pt-11">
-			<div className="px-6 max-w-desktop mx-auto lg:pb-32 lg:px-0">
+			<div className="px-6 max-w-desktop mx-auto lg:pb-32 xl:px-0">
 				<div
 					className="text-center mb-6 md:text-left"
 					data-aos="fade-up"
@@ -25,11 +25,11 @@ export default function WhatWeDo() {
 					<h2 className="text-xl text-yellow font-semibold mb-3 md:text-xl md:font-medium">
 						SERVICES
 					</h2>
-					<p className="font-medium md:text-3xl md:font-semibold md:w-[62%] lg:w-1/2 xl:w-[35%]">
+					<p className="font-medium text-3xl md:font-semibold md:w-[62%] lg:w-1/2 xl:w-[35%]">
 						What we do
 					</p>
 				</div>
-				<div className="md:grid grid-cols-2 gap-6 lg:grid-cols-2">
+				<div className="grid md:grid-cols-2 gap-6 mb-6">
 					<WhatWeDoCard
 						img={contentImg}
 						title="TV Content"
@@ -57,14 +57,14 @@ export default function WhatWeDo() {
 					/>
 				</div>
 			</div>
-			<div className="pt-[98px] bg-black md:pb-[98px] relative ">
+			<div className="py-[98px] bg-black relative ">
 				<div className="px-6 md:flex md:justify-between max-w-desktop mx-auto lg:px-0">
 					<AchievementCard icon={projectPlan} title="Completed Projects" rating="150 +" />
 					<AchievementCard icon={rating} title="Customer Satisfaction" rating="60%" />
 					<AchievementCard icon={raise} title="Raised by Clients" rating="$12M" />
 					<AchievementCard icon={timeline} title="Years in Business" rating="7 yrs" />
 				</div>
-				<div className="absolute    -bottom-[15%] -right-[20%] bg-patternRight bg-no-repeat bg-center h-[400px] w-full"></div>
+				<div className="absolute -bottom-[5%] right-0 md:-bottom-[15%] md:-right-[20%] bg-patternRight bg-no-repeat bg-center h-[400px] w-full"></div>
 			</div>
 		</section>
 	);

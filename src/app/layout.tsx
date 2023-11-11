@@ -7,6 +7,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "@/components/Footer";
 
 const inter = Poppins({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<Navbar />
 				</header>
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

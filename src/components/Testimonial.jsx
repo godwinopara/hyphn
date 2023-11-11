@@ -23,7 +23,7 @@ const items = [
 const responsive = {
 	0: { items: 1 },
 	568: { items: 2 },
-	1024: { items: 3 },
+	1200: { items: 3 },
 };
 
 export default function Testimonial() {
@@ -52,11 +52,11 @@ export default function Testimonial() {
 	};
 
 	return (
-		<section className="max-w-desktop mx-auto mb-20 pt-28 relative px-6 lg:px-0">
+		<section className="max-w-desktop mx-auto mb-20 pt-28 relative px-6 xl:px-0">
 			<div className="mb-24 flex items-center justify-between">
 				<div>
 					<h2 className="text-yellow md:text-xl mb-6">TESTIMONIAL</h2>
-					<strong className="text-2xl md:text-3xl">Our Happy Customer</strong>
+					<strong className="text-xl md:text-3xl">Our Happy Customer</strong>
 				</div>
 
 				<div key="btns" className="flex">

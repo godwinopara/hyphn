@@ -3,7 +3,7 @@ import logo from "public/assets/logo-white.svg";
 
 export default function Navbar() {
 	return (
-		<nav className="py-1 bg-black fixed w-full z-10 top-0 left-0">
+		<nav className="py-1 bg-black fixed w-full z-50 top-0 left-0">
 			<div className="py-5 px-6 max-w-desktop mx-auto flex items-center justify-between xl:py-2 xl:px-0">
 				<div>
 					<Image src={logo} alt="logo" className="w-3/5 lg:w-full" />

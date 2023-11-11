@@ -8,13 +8,13 @@ import linkedin from "public/assets/linkedin-color.svg";
 
 export default function OurTeam() {
 	return (
-		<section className="max-w-desktop mx-auto py-16">
+		<section className="px-6 max-w-desktop mx-auto py-16 xl:px-0">
 			<div className="mb-6">
 				<h2 className="text-xl text-yellow font-medium mb-6">OUR TEAM</h2>
-				<p className="text-2xl font-semibold">My Gang, Creative and Talented</p>
+				<p className="text-xl font-semibold md:text-2xl">My Gang, Creative and Talented</p>
 			</div>
 
-			<div className="grid grid-cols-3 gap-16 text-center">
+			<div className="grid md:grid-cols-3 gap-16 text-center">
 				<div>
 					<Image src={huston1} alt="guy on black shirt sitting down" />
 					<div className="mt-4">

@@ -11,7 +11,7 @@ import Marquee from "react-fast-marquee";
 export default function Partners() {
 	return (
 		<>
-			<div className="px-6  bg-white py-9 md:hidden">
+			{/* <div className="px-6  bg-white py-9 hidden">
 				<div className="grid grid-cols-2 gap-5">
 					<div className="flex justify-center">
 						<Image src={flexport} alt="flexport logo" />
@@ -31,9 +31,9 @@ export default function Partners() {
 						<Image src={stanford} alt="stanford logo" />
 					</div>
 				</div>
-			</div>
+			</div> */}
 			<div className=" bg-white">
-				<div className="hidden max-w-desktop mx-auto py-9 px-6 md:block lg:px-0">
+				<div className="py-3 max-w-desktop mx-auto md:py-9 px-6 lg:px-0">
 					<Marquee>
 						<div className="mr-16">
 							<Image src={flexport} alt="flexport logo" />

@@ -6,9 +6,9 @@ import WhyChooseUsCard from "./WhyChooseUsCard";
 
 export default function AboutInfo() {
 	return (
-		<section className="py-16 max-w-desktop mx-auto">
+		<section className="px-6 xl:px-0 py-16 max-w-desktop mx-auto">
 			<div className="text-center mb-17">
-				<h2 className="text-yellow text-42 font-bold leading-130 mb-6">
+				<h2 className="text-3xl text-yellow xl:text-42 font-bold leading-130 mb-6">
 					Crafting Content Excellence
 				</h2>
 				<p className="leading-130 max-w-[827px] mx-auto">
@@ -19,10 +19,10 @@ export default function AboutInfo() {
 			</div>
 
 			<div>
-				<h2 className="text-center text-42 font-bold leading-130 text-yellow mb-12">
+				<h2 className="text-3xl text-center xl:text-42 font-bold leading-130 text-yellow mb-12">
 					Why Choose Hyphn
 				</h2>
-				<div className="grid grid-cols-3 gap-10">
+				<div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
 					<WhyChooseUsCard
 						img={expertise}
 						title="Tailored Strategies"

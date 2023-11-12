@@ -1,6 +1,7 @@
-import contentImg from "public/assets/content.svg";
-import heartImg from "public/assets/Heart.svg";
-import workImg from "public/assets/Work.svg";
+import tv from "public/assets/tv.svg";
+import radio from "public/assets/radio.svg";
+import digitalContent from "public/assets/digital-content.svg";
+import experientialContent from "public/assets/experiential-content.svg";
 import WhatWeDoCard from "./WhatWeDoCard";
 import rating from "public/assets/rating.svg";
 import projectPlan from "public/assets/project-plan.svg";
@@ -31,26 +32,26 @@ export default function WhatWeDo() {
 				</div>
 				<div className="grid md:grid-cols-2 gap-6 mb-6">
 					<WhatWeDoCard
-						img={contentImg}
+						img={tv}
 						title="TV Content"
 						description="Our team of talented creatives specializes in producing engaging television content that informs and entertains."
 						duration="700"
 					/>
 
 					<WhatWeDoCard
-						img={heartImg}
+						img={radio}
 						title="Radio Content"
 						description="With years of experience in radio broadcasting, our team knows how to create impactful audio content that captivates listeners."
 						duration="1000"
 					/>
 					<WhatWeDoCard
-						img={workImg}
+						img={digitalContent}
 						title="Digital Content"
 						description="In the digital age, online platforms hold immense potential to reach audiences globally.."
 						duration="1500"
 					/>
 					<WhatWeDoCard
-						img={workImg}
+						img={experientialContent}
 						title="Experiential Content"
 						description="We believe in creating immersive experiences that go beyond traditional marketing formats."
 						duration="2000"

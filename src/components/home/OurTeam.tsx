@@ -5,7 +5,7 @@ import huston3 from "public/assets/huston3.png";
 import facebook from "public/assets/facebook-color.svg";
 import instagram from "public/assets/instagram-color.svg";
 import linkedin from "public/assets/linkedin-color.svg";
-import TeamList from "./TeamList";
+import TeamList from "../TeamList";
 
 export default function OurTeam() {
 	return (

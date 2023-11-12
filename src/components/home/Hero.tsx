@@ -6,7 +6,7 @@ import heroBg from "public/assets/herobg.svg";
 import heroBg2 from "public/assets/herobg2.png";
 import heroBg3 from "public/assets/herobg3.png";
 import heroBg4 from "public/assets/herobg4.png";
-import Partners from "@/components/Partners";
+import Partners from "@/components/home/Partners";
 
 export default function Hero() {
 	const images = [heroBg2, heroBg3, heroBg4, heroBg];

@@ -1,7 +1,7 @@
-import AboutHero from "@/components/AboutHero";
-import AboutInfo from "@/components/AboutInfo";
-import Mission from "@/components/Mission";
-import AboutTeam from "@/components/AboutTeam";
+import AboutHero from "@/components/about/AboutHero";
+import AboutInfo from "@/components/about/AboutInfo";
+import Mission from "@/components/about/Mission";
+import AboutTeam from "@/components/about/AboutTeam";
 
 export default function AboutPage() {
 	return (

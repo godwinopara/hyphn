@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TeamList from "./TeamList";
+import TeamList from "../TeamList";
 import underline from "public/assets/underline.svg";
 
 export default function AboutTeam() {

@@ -7,7 +7,7 @@ import rating from "public/assets/rating.svg";
 import projectPlan from "public/assets/project-plan.svg";
 import raise from "public/assets/raise.svg";
 import timeline from "public/assets/timeline.svg";
-import AchievementCard from "./AchievementCard";
+import AchievementCard from "./home/AchievementCard";
 
 // import one from "public/assets/one.svg";
 

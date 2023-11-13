@@ -4,76 +4,30 @@ import quality from "public/assets/quality.svg";
 import Image from "next/image";
 import WhyChooseUsCard from "./WhyChooseUsCard";
 import underline from "public/assets/underline.svg";
+import office from "public/assets/office.png";
 
 export default function AboutInfo() {
 	return (
-		<section className="px-6 xl:px-0 py-16 max-w-desktop mx-auto">
-			<div className="text-center mb-17">
-				<h2 className="text-3xl text-yellow md:text-42 font-bold leading-130 mb-6">
-					Crafting Content Excellence
-				</h2>
-				<p className="leading-130 max-w-[827px] mx-auto">
-					At Hyphn, our journey began with a shared love for the written word. Over the years, we’ve
-					evolved into a full-fledged content agency, committed to helping our clients achieve their
-					communication goals through the power of words.
-				</p>
-			</div>
-
-			<div>
-				<div className="relative">
-					<h2 className="text-3xl text-center md:text-42 font-bold leading-130 text-yellow mb-28">
-						Why Choose Hyphn
+		<section className="px-6 xl:px-0 max-w-desktop mx-auto my-44">
+			<div className="grid lg:grid-cols-2 items-center">
+				<Image src={office} alt="office photo" />
+				<div className="mt-10 lg:mt-0">
+					<h2 className="text-2xl md:text-42 leading-130 font-bold text-yellow mb-6">
+						Hyphn Profile
 					</h2>
-					<Image
-						src={underline}
-						alt="zig zag underline"
-						className="left-[5%] absolute top-16 md:left-[30%] xl:left-[38%]"
-					/>
-				</div>
-				<div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
-					<WhyChooseUsCard
-						img={expertise}
-						title="Tailored Strategies"
-						description="We understand that each client is unique, and we work closely with you to develop customized content marketing strategies that align with your business goals and target audience."
-					/>
-					<WhyChooseUsCard
-						img={customization}
-						title="Creative Excellence"
-						description="Our dedicated team of talented writers, directors, producers, and designers
-							consistently delivers high-quality content that stands out from the crowd. We infuse
-							creativity, innovation, and storytelling into every project we undertake."
-					/>
-					<WhyChooseUsCard
-						img={quality}
-						title="Results-Driven Approach"
-						description="We are committed to driving tangible results for your business. Our data-driven
-							insights and analytics enable us to optimize content performance and ensure it
-							resonates with your target audience, expanding your reach and increasing engagement."
-					/>
-
-					<WhyChooseUsCard
-						img={customization}
-						title="Client-Centric Collaboration"
-						description="We believe in building strong partnerships with our clients. Our collaborative
-							approach ensures open communication, transparent processes, and the highest level of
-							customer service throughout our engagement."
-					/>
-
-					<WhyChooseUsCard
-						img={quality}
-						title="Industry Expertise"
-						description="With years of experience in content marketing, we have garnered a deep understanding
-							of various industries. This expertise allows us to tailor our strategies and create
-							content that speaks directly to your target market."
-					/>
-
-					<WhyChooseUsCard
-						img={expertise}
-						title="Deep Industry Insights"
-						description="Partner with Hyphn today and experience the power of exceptional content marketing.
-							Let us transform your brand's narrative into an impactful story that resonates with
-							your audience, drives engagement, and fuels your success."
-					/>
+					<p className="md:text-xl leading-130">
+						Hyphn is a comprehensive hub for exceptional content marketing services. We are a
+						content marketing agency focused on delivering remarkable TV, radio, digital, and
+						experiential content that helps businesses captivate audiences.
+					</p>
+					<br />
+					<p className="md:text-xl leading-130">
+						At Hyphn, we understand that effective content marketing goes beyond just showcasing
+						products and services. It's about crafting narratives that resonate with your target
+						audience and compel them to take action. With our expertise, innovative strategies, and
+						passion for storytelling, we ensure that your brand's voice is heard loud and clear
+						across all channels.
+					</p>
 				</div>
 			</div>
 		</section>

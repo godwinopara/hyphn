@@ -8,6 +8,7 @@ import tv from "public/assets/tv.png";
 import digital from "public/assets/digital-online.png";
 import radio from "public/assets/radio.png";
 import event from "public/assets/event.png";
+import Link from "next/link";
 
 type ContentType = {
 	id: number;
@@ -60,11 +61,12 @@ export default function ContentVault() {
 		<main>
 			<ContentHero />
 			<div className="max-w-desktop mx-auto">
-				<h2 className="text-yellow text-xl mb-4 mt-16">Content Vault</h2>
-
 				<div>
-					<div className="mb-24">
-						<h3 className="font-semibold">TV</h3>
+					<div className="my-24">
+						<div className="flex justify-between items-center mb-16">
+							<h3 className="font-semibold text-3xl text-yellow">TV</h3>
+							<div>View All</div>
+						</div>
 						<div className="flex justify-between gap-8">
 							<ContentDetailCard img={tv} title={currentTvContent} />
 							<div>
@@ -84,7 +86,10 @@ export default function ContentVault() {
 					</div>
 
 					<div className="mb-24">
-						<h3>Radio</h3>
+						<div className="flex justify-between items-center mb-16">
+							<h3 className="font-semibold text-3xl text-yellow">RADIO</h3>
+							<div>View All</div>
+						</div>
 						<div className="flex justify-between gap-8">
 							<div>
 								{radioContentData.map((content) => {
@@ -104,7 +109,10 @@ export default function ContentVault() {
 					</div>
 
 					<div className="mb-24">
-						<h3>Digital/Online</h3>
+						<div className="flex justify-between items-center mb-16">
+							<h3 className="font-semibold text-3xl text-yellow">DIGITAL/ONLINE</h3>
+							<div>View All</div>
+						</div>
 						<div className="flex justify-between gap-8">
 							<ContentDetailCard img={digital} title={currentTvContent} />
 							<div>
@@ -124,7 +132,10 @@ export default function ContentVault() {
 					</div>
 
 					<div className="mb-24">
-						<h3>Event</h3>
+						<div className="flex justify-between items-center mb-16">
+							<h3 className="font-semibold text-3xl text-yellow">EVENT</h3>
+							<div>View All</div>
+						</div>
 						<div className="flex justify-between gap-8">
 							<div>
 								{radioContentData.map((content) => {

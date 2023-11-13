@@ -6,26 +6,24 @@ interface WhatWeDoCardProps {
 	img: string;
 	title: string;
 	description: string;
-	duration: string;
+	className: string;
 }
 
-// data-aos="fade-up"
-// data-aos-offset="200"
-// data-aos-delay="50"
-// data-aos-duration={duration}
-// data-aos-easing="ease-in-out"
-
-export default function WhatWeDoCard({ img, title, description, duration }: WhatWeDoCardProps) {
+export default function WhatWeDoCard({ img, title, description, className }: WhatWeDoCardProps) {
 	return (
-		<div className="py-10 bg-white1 rounded-3xl  flex flex-col items-center justify-center text-center mt-8 md:text-left md:px-4 lg:items-start xl:px-16">
-			<div className="bg-light-yellow p-6 rounded-2xl mb-6 md:mr-auto">
-				<Image src={img} alt="content creation icon" />
+		<div
+			className={`py-10 px-4 bg-white1 rounded-3xl mt-8 md:text-left lg:items-start xl:px-16 ${className}`}
+		>
+			<div className="flex items-center lg:block">
+				<div className="h-[48px] w-[48px] bg-light-yellow lg:h-[88px] lg:w-[88px] flex items-center justify-center rounded-2xl">
+					<Image src={img} alt="content creation icon" />
+				</div>
+				<h3 className="ml-2 lg:ml-0 text-xl font-semibold lg:text-2xl lg:my-5">{title}</h3>
 			</div>
 			<div className="mb-9">
-				<h3 className="text-xl font-semibold mb-3 lg:text-2xl">{title}</h3>
 				<p className="lg:text-lg">{description}</p>
 			</div>
-			<button className="flex items-center justify-center text-yellow px-4 py-3 gap-8   md:justify-start md:px-0">
+			<button className="flex items-center justify-center text-yellow px-4 py-4 gap-8 hover:bg-yellow hover:px-6 hover:rounded-xl   md:justify-start md:px-0">
 				<span className="lg:text-lg lg:text-black">Learn More</span>
 				<Image src={arrow} alt="arrow icon" className="hidden lg:block" />
 				<Image src={arrowYellow} alt="arrow icon" className="lg:hidden" />

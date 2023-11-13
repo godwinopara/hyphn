@@ -9,7 +9,7 @@ type ContentDetailCardProps = {
 
 export default function ContentDetailCard({ title, img }: ContentDetailCardProps) {
 	return (
-		<div className="p-7 border border-black w-full">
+		<div className="mb-10 p-7 border border-black w-full xl:mb-0">
 			<Image src={img} alt="chase wedding" />
 			<div className="flex items-center gap-4 my-6">
 				<Image src={user} alt="user icon" />

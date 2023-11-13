@@ -40,7 +40,7 @@ const config: Config = {
 				19: "1.188rem",
 			},
 			maxWidth: {
-				desktop: "1298px",
+				desktop: "1250px",
 			},
 			lineHeight: {
 				130: "130%",

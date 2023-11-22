@@ -38,7 +38,7 @@ export default function Navbar() {
 					<NavLink href="/about" currentPath={currentRoute} label="About Us" />
 					<NavLink href="/content" currentPath={currentRoute} label="Content Vault" />
 					<NavLink href="/team" currentPath={currentRoute} label="Our Team" />
-					<NavLink href="/contact" currentPath={currentRoute} label="Contact Us" />
+					{/* <NavLink href="/contact" currentPath={currentRoute} label="Contact Us" /> */}
 
 					<li className="mr-8 cursor-pointer border border-white rounded-lg py-2.5 px-3 hover:bg-yellow">
 						Book a meeting
@@ -79,12 +79,12 @@ export default function Navbar() {
 						icon="/assets/team-icon.svg"
 						label="Our Team"
 					/>
-					<MobileNavLink
+					{/* <MobileNavLink
 						href="/contact"
 						currentPath={currentRoute}
 						icon="/assets/contact-icon.svg"
 						label="Contact Us"
-					/>
+					/> */}
 				</ul>
 				<button className="xl:hidden" onClick={handleToggleNav}>
 					{!navIsOpen && <Image src={hamburgerMenu} alt="hamburger icon" />}

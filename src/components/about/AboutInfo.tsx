@@ -23,9 +23,9 @@ export default function AboutInfo() {
 					<br />
 					<p className="md:text-xl leading-130">
 						At Hyphn, we understand that effective content marketing goes beyond just showcasing
-						products and services. It's about crafting narratives that resonate with your target
+						products and services. ${`It's`}about crafting narratives that resonate with your target
 						audience and compel them to take action. With our expertise, innovative strategies, and
-						passion for storytelling, we ensure that your brand's voice is heard loud and clear
+						passion for storytelling, we ensure that your ${`brand's`} voice is heard loud and clear
 						across all channels.
 					</p>
 				</div>

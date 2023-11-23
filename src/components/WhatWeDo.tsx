@@ -11,7 +11,7 @@ import AchievementCard from "./AchievementCard";
 
 export default function WhatWeDo() {
 	return (
-		<section className="pt-11">
+		<section className="pt-11" id="services">
 			<div className="px-6 max-w-desktop mx-auto lg:pb-32 xl:px-0">
 				<div
 					className="text-center mb-6 md:text-left"

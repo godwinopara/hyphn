@@ -12,14 +12,15 @@ import arrowRight from "public/assets/arrow-right.svg";
 import arrowLeft from "public/assets/arrow-left.svg";
 
 const items = [
-	<TestimonialCard />,
-	<TestimonialCard />,
-	<TestimonialCard />,
-	<TestimonialCard />,
-	<TestimonialCard />,
-	<TestimonialCard />,
-	<TestimonialCard />,
+	<TestimonialCard key={1} />,
+	<TestimonialCard key={2} />,
+	<TestimonialCard key={3} />,
+	<TestimonialCard key={4} />,
+	<TestimonialCard key={5} />,
+	<TestimonialCard key={6} />,
+	<TestimonialCard key={7} />,
 ];
+
 const responsive = {
 	0: { items: 1 },
 	568: { items: 2 },

@@ -34,7 +34,7 @@ export default function Navbar() {
 					</Link>
 				</div>
 				<ul className="hidden lg:flex items-center font-medium text-white">
-					<NavLink href="/services" currentPath={currentRoute} label="Services" />
+					<NavLink href="/#services" currentPath={currentRoute} label="Services" />
 					<NavLink href="/about" currentPath={currentRoute} label="About Us" />
 					<NavLink href="/content" currentPath={currentRoute} label="Content Vault" />
 					<NavLink href="/team" currentPath={currentRoute} label="Our Team" />
@@ -56,7 +56,7 @@ export default function Navbar() {
 					}`}
 				>
 					<MobileNavLink
-						href="/services"
+						href="/#services"
 						currentPath={currentRoute}
 						icon="/assets/services-icon.svg"
 						label="Services"
@@ -127,7 +127,7 @@ const MobileNavLink = ({ href, currentPath, label, icon }: MobileNavLinkProp) =>
 				currentPath === href ? "text-yellow hover:text-white" : ""
 			}`}
 		>
-			<img src={icon} alt="icon" className="mr-5" />
+			<Image src={icon} alt="icon" className="mr-5" height={20} width={20} />
 			<Link href={href}>{label}</Link>
 		</li>
 	);

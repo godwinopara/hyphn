@@ -11,10 +11,18 @@ import Partners from "@/components/home/Partners";
 export default function Hero() {
 	const images = [heroBg2, heroBg3, heroBg4, heroBg];
 	const texts = [
-		"Social Media.",
-		"Great Marlet Analysis.",
-		"Captivating Videos.",
-		"Strategies Articles.",
+		<span className="text-yellow" key={1}>
+			Social <br /> Media.
+		</span>,
+		<span className="text-yellow" key={2}>
+			Great Marlet <br /> Analysis.
+		</span>,
+		<span className="text-yellow" key={3}>
+			Captivating <br /> Videos.
+		</span>,
+		<span className="text-yellow" key={4}>
+			Strategies <br /> Articles.
+		</span>,
 	];
 
 	const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +33,7 @@ export default function Hero() {
 		}, 3000);
 
 		return () => clearInterval(intervalId);
-	}, []);
+	}, [images.length]);
 
 	return (
 		<section className="mt-[4.85rem] xl:min-h-[95vh] bg-black pt-10  pb-5 xl:pt-16 xl:pb-0  relative">
@@ -39,8 +47,9 @@ export default function Hero() {
 					data-aos-easing="ease-in-out"
 				>
 					<h1 className="font-bold leading-130 text-2xl md:text-40  xl:text-44 ">
-						Discover the power of ENGAGING CONTENT through
-						<span className="text-yellow"> {texts[currentIndex] || "Strategies Articles."}</span>
+						Discover the power of ENGAGING CONTENT through{" "}
+						{texts[currentIndex] || <span className="text-yellow"> Strategies Articles.</span>}
+						{/* <span className="text-yellow"> {texts[currentIndex] || "Strategies Articles."}</span> */}
 					</h1>
 					<p className=" mt-3 mb-9 md:text-lg xl:text-xl">
 						We deliver expert content marketing strategies for our clients with our engaging

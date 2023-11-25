@@ -11,6 +11,8 @@ import { useEffect, useState, useRef } from "react";
 import arrowRight from "public/assets/arrow-right.svg";
 import arrowLeft from "public/assets/arrow-left.svg";
 
+import { getInnerWidth } from "@/components/getInnerWidth";
+
 const items = [
 	<TestimonialCard key={1} />,
 	<TestimonialCard key={2} />,
@@ -92,6 +94,7 @@ export default function Testimonial() {
 				items={items}
 				responsive={responsive}
 				ref={carousel}
+				innerWidth={getInnerWidth}
 			/>
 		</section>
 	);

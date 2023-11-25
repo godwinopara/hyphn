@@ -3,7 +3,11 @@
 import Image from "next/image";
 import customer from "public/assets/customer.png";
 
-export default function TestimonialCard() {
+interface TestimonialCardProps {
+	jobTitle: string;
+}
+
+export default function TestimonialCard({ jobTitle }: TestimonialCardProps) {
 	return (
 		<ul className="p-10 shadow-lg mb-10 rounded-3xl md:mr-10">
 			<li className="mb-5">
@@ -17,7 +21,7 @@ export default function TestimonialCard() {
 					</div>
 					<div>
 						<strong>Emily Stones</strong>
-						<span className="block">CEO, Marketing Guru</span>
+						<span className="block">{jobTitle}</span>
 					</div>
 				</div>
 			</li>

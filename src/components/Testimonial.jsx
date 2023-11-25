@@ -14,13 +14,13 @@ import arrowLeft from "public/assets/arrow-left.svg";
 import { getInnerWidth } from "@/components/getInnerWidth";
 
 const items = [
-	<TestimonialCard key={1} />,
-	<TestimonialCard key={2} />,
-	<TestimonialCard key={3} />,
-	<TestimonialCard key={4} />,
-	<TestimonialCard key={5} />,
-	<TestimonialCard key={6} />,
-	<TestimonialCard key={7} />,
+	"CEO, Marketing Guru",
+	"CEO, Marketing Guru",
+	"CEO, Marketing Guru",
+	"CEO, Marketing Guru",
+	"CEO, Marketing Guru",
+	"CEO, Marketing Guru",
+	"CEO, Marketing Guru",
 ];
 
 const responsive = {
@@ -29,10 +29,13 @@ const responsive = {
 	1200: { items: 3 },
 };
 
+console.log(getInnerWidth());
+
 export default function Testimonial() {
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [disablePrev, setDisablePrev] = useState(true);
 	const [disableNext, setDisableNext] = useState(false);
+	const [innerWidth, setInnerWidth] = useState(0);
 
 	const carousel = useRef(null);
 
@@ -53,6 +56,10 @@ export default function Testimonial() {
 			setDisablePrev(false);
 		}
 	};
+
+	useEffect(() => {
+		setInnerWidth(window.innerWidth);
+	}, [window.innerWidth]);
 
 	return (
 		<section className="max-w-desktop mx-auto mb-20 pt-28 relative px-6 xl:px-0">
@@ -91,10 +98,12 @@ export default function Testimonial() {
 				mouseTracking
 				disableDotsControls
 				disableButtonsControls
-				items={items}
+				items={items.map((item, id) => (
+					<TestimonialCard jobTitle={item} key={id} />
+				))}
 				responsive={responsive}
 				ref={carousel}
-				innerWidth={getInnerWidth}
+				innerWidth={innerWidth}
 			/>
 		</section>
 	);

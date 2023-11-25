@@ -127,7 +127,7 @@ const MobileNavLink = ({ href, currentPath, label, icon }: MobileNavLinkProp) =>
 				currentPath === href ? "text-yellow hover:text-white" : ""
 			}`}
 		>
-			<Image src={icon} alt="icon" className="mr-5" height={20} width={20} />
+			<Image src={icon} alt="icon" className="mr-5 h-auto w-auto" height={20} width={20} />
 			<Link href={href}>{label}</Link>
 		</li>
 	);

@@ -60,6 +60,9 @@ const config: Config = {
 				aboutHero: "url('/assets/aboutHero.png')",
 				darkGradient: "linear-gradient(269deg, rgba(16, 16, 16, 0.54) -2.71%, #101010 92.77%)",
 				contentVaultBg: "url('/assets/content-vault-bg.png')",
+				dataHeroBg: "url('/assets/data.png')",
+				directorBg: "url('/assets/director.png')",
+				igniteBg: "url('/assets/ignite.png')",
 			},
 			boxShadow: {
 				"3xl": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",

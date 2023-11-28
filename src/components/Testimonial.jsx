@@ -11,8 +11,6 @@ import { useEffect, useState, useRef } from "react";
 import arrowRight from "public/assets/arrow-right.svg";
 import arrowLeft from "public/assets/arrow-left.svg";
 
-import { getInnerWidth } from "@/components/getInnerWidth";
-
 const items = [
 	"CEO, Marketing Guru",
 	"CEO, Marketing Guru",
@@ -28,8 +26,6 @@ const responsive = {
 	568: { items: 2 },
 	1200: { items: 3 },
 };
-
-console.log(getInnerWidth());
 
 export default function Testimonial() {
 	const [activeIndex, setActiveIndex] = useState(0);
@@ -59,7 +55,7 @@ export default function Testimonial() {
 
 	useEffect(() => {
 		setInnerWidth(window.innerWidth);
-	}, [window.innerWidth]);
+	}, [innerWidth]);
 
 	return (
 		<section className="max-w-desktop mx-auto mb-20 pt-28 relative px-6 xl:px-0">

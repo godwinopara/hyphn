@@ -6,12 +6,14 @@ import OurTeam from "@/components/home/OurTeam";
 import Subscribe from "@/components/Subscribe";
 import Testimonial from "@/components/Testimonial";
 import WhatWeDo from "@/components/WhatWeDo";
+import Partners from "@/components/home/Partners";
 
 export default function Home() {
 	return (
 		<>
 			<main>
 				<Hero />
+				<Partners />
 				<WhatWeDo />
 				<OurTeam />
 				<ContentVault />

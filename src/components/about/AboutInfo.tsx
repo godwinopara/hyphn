@@ -9,11 +9,9 @@ import office from "public/assets/office.png";
 export default function AboutInfo() {
 	return (
 		<section className="px-6 xl:px-0 max-w-desktop mx-auto my-32">
-			<div className="xl:w-[70%] mx-auto items-center">
+			<div className="mx-auto items-center">
 				<div className="mt-10 lg:mt-0 text-center">
-					<h2 className="text-2xl md:text-42 leading-130 font-bold text-yellow mb-6">
-						Hyphn Profile
-					</h2>
+					<h2 className="text-2xl md:text-42 leading-130 font-bold text-yellow mb-6">Profile</h2>
 					<p className="md:text-xl leading-130">
 						Hyphn is a comprehensive hub for exceptional content marketing services. We are a
 						content marketing agency focused on delivering remarkable TV, radio, digital, and

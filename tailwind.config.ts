@@ -59,8 +59,9 @@ const config: Config = {
 				heroPattern2: "url('/assets/bg-design2.svg')",
 				patternRight: "url('/assets/patternRight.svg')",
 				patternLeft: "url('/assets/patternLeft.svg')",
-				aboutHero: "url('/assets/aboutHero.png')",
-				darkGradient: "linear-gradient(269deg, rgba(16, 16, 16, 0.54) -2.71%, #101010 92.77%)",
+				aboutHero: "url('/assets/aboutBg.png')",
+				darkGradient:
+					"linear-gradient(0deg, rgba(16, 16, 16, 0.43) -0.08%, rgba(16, 16, 16, 0.80) 110.57%)",
 				contentVaultBg: "url('/assets/content-vault-bg.png')",
 				dataHeroBg: "url('/assets/data.png')",
 				directorBg: "url('/assets/director.png')",

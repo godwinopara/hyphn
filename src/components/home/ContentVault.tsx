@@ -17,12 +17,17 @@ export default function ContentVault() {
 					</p>
 				</div>
 				<div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 bg-black">
-					<ContentVaultCard img={radio} section="RADIO" title="World of Hero" date="16 July 2023" />
+					<ContentVaultCard
+						img={radio}
+						section="RADIO"
+						title="World of Hero Radio Show"
+						date="16 July 2023"
+					/>
 
 					<ContentVaultCard
 						img={tv}
 						section="TV"
-						title="Chasing Weddings"
+						title="League of Heroes"
 						date="20 November 2023"
 					/>
 					<ContentVaultCard

@@ -36,7 +36,7 @@ export default function Navbar() {
 				<ul className="hidden lg:flex items-center font-medium text-white">
 					<NavLink href="/#services" currentPath={currentRoute} label="Services" />
 					<NavLink href="/about" currentPath={currentRoute} label="About Us" />
-					<NavLink href="/content" currentPath={currentRoute} label="Content Vault" />
+					<NavLink href="/content" currentPath={currentRoute} label="Our Content Vault" />
 					<NavLink href="/team" currentPath={currentRoute} label="Our Team" />
 					{/* <NavLink href="/contact" currentPath={currentRoute} label="Contact Us" /> */}
 
@@ -71,7 +71,7 @@ export default function Navbar() {
 						href="/content"
 						currentPath={currentRoute}
 						icon="/assets/content-icon.svg"
-						label="Content Vault"
+						label="Our Content Vault"
 					/>
 					<MobileNavLink
 						href="/team"

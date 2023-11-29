@@ -6,17 +6,25 @@ type ContentType = {
 	id: number;
 	title: string;
 	selected: boolean;
+	description: string;
 };
 
 type ContentCardProps = {
 	id: number;
 	title: string;
 	selected: boolean;
+	description: string;
 	onClick: MouseEventHandler<HTMLDivElement> | ((content: ContentType) => void);
 };
 
-export default function ContentCard({ id, title, selected, onClick }: ContentCardProps) {
-	const content = { id, title, selected };
+export default function ContentCard({
+	id,
+	title,
+	selected,
+	description,
+	onClick,
+}: ContentCardProps) {
+	const content = { id, title, selected, description };
 
 	const handleClick = () => {
 		if (typeof onClick === "function") {
@@ -37,10 +45,7 @@ export default function ContentCard({ id, title, selected, onClick }: ContentCar
 			</div>
 			<div>
 				<h4 className="font-bold text-lg mb-1">{title}</h4>
-				<p className="mt-5">
-					Lorem ipsum dolor sit amet consectetur. Egestas dignissim enim et neque tellus cras.
-					Iaculis tortor ultrices mattis quam scelerisque.
-				</p>
+				<p className="mt-5">{description}</p>
 			</div>
 		</div>
 	);

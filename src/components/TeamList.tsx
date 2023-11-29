@@ -2,7 +2,7 @@ import Image from "next/image";
 import lanre from "public/assets/lanre.png";
 import ada from "public/assets/ada.png";
 import blessing from "public/assets/blessing.png";
-import uche from "public/assets/Uche.png";
+import uche from "public/assets/uche.png";
 
 export default function TeamList() {
 	return (

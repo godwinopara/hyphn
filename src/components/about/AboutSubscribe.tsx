@@ -1,7 +1,7 @@
 export default function AboutSubscribe() {
 	return (
 		<section className="w-[95%] px-6 max-w-[1240px] mx-auto bg-yellow absolute -bottom-24 lg:w-full text-white xl:px-0">
-			<div className="max-w-[598px] mx-auto py-8">
+			{/* <div className="max-w-[598px] mx-auto py-8">
 				<h2 className="text-lg lg:text-4xl font-bold leading-130 mb-5">
 					To Get The Latest News About Us
 				</h2>
@@ -15,7 +15,7 @@ export default function AboutSubscribe() {
 						Subscribe
 					</button>
 				</div>
-			</div>
+			</div> */}
 		</section>
 	);
 }

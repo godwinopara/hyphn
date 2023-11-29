@@ -4,6 +4,7 @@ import instagram from "public/assets/instagram-yellow.svg";
 import linkedin from "public/assets/linkedin-yellow.svg";
 import twitter from "public/assets/twitter-yellow.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
 	return (
@@ -12,8 +13,9 @@ export default function Footer() {
 				<div className="mb-10 md:mb-0">
 					<Image src={Logo} alt="logo" className="pb-5" />
 					<p className="mb-5 text-xl">
-						Some footer text about the Agency. Just a little description to help people understand
-						you better
+						Hyphn is a comprehensive hub for exceptional content marketing services. We are a
+						content marketing agency focused on delivering remarkable TV, radio, digital, and
+						experiential content that helps businesses captivate audiences.
 					</p>
 					<div className="flex items-center gap-4">
 						<Image src={facebook} alt="facebook logo" />
@@ -26,22 +28,29 @@ export default function Footer() {
 					<div>
 						<h3 className="font-semibold text-xl mb-4">Quick Links</h3>
 						<ul className="flex flex-col gap-6 text-lg">
-							<li>Services</li>
-							<li>About Us</li>
-							<li>Content Vault</li>
-							<li>Portfolio</li>
-							<li>Contact Us</li>
+							<li>
+								<Link href="/#service">Services</Link>
+							</li>
+							<li>
+								<Link href="/about">About Us</Link>
+							</li>
+							<li>
+								<Link href="/content">Our Content Vault</Link>
+							</li>
+							<li>
+								<Link href="/team">Our Team</Link>
+							</li>
 						</ul>
 					</div>
 				</div>
 				<div className="mx-auto">
 					<h3 className="font-semibold text-xl mb-7">Address</h3>
 					<p className="text-xl">
-						Design Agency Head Office.
+						Hyphn Head Office.
 						<br />
-						Airport Road
+						434b, Damilola Fashade street off Titilayo Sector,
 						<br />
-						United Arab Emirate
+						Omole Phase 1, Lagos, Nigeria
 					</p>
 				</div>
 			</div>

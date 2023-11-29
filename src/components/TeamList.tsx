@@ -6,9 +6,9 @@ import uche from "public/assets/Uche.png";
 
 export default function TeamList() {
 	return (
-		<div className="grid md:grid-cols-4 gap-16 text-center">
+		<div className="grid md:grid-cols-2 xl:grid-cols-4 gap-16 text-center">
 			<div>
-				<Image src={ada} alt="guy on black shirt sitting down" />
+				<Image src={ada} alt="guy on black shirt sitting down" className="mx-auto" />
 				<div className="mt-4">
 					<h3 className="font-bold text-xl mb-2">Eze-nwoko Adaeze Confidence</h3>
 					<span className="mb-2 block">HR Generalist</span>
@@ -19,7 +19,7 @@ export default function TeamList() {
 				</div>
 			</div>
 			<div>
-				<Image src={lanre} alt="guy on black shirt sitting down" />
+				<Image src={lanre} alt="guy on black shirt sitting down" className="mx-auto" />
 				<div className="mt-4">
 					<h3 className="font-bold text-xl mb-2">Akinyele Olanrewaju Quadri</h3>
 					<span className="mb-2 block">Creative Manager</span>
@@ -27,7 +27,7 @@ export default function TeamList() {
 				</div>
 			</div>
 			<div>
-				<Image src={blessing} alt="guy on black shirt sitting down" />
+				<Image src={blessing} alt="guy on black shirt sitting down" className="mx-auto" />
 				<div className="mt-4">
 					<h3 className="font-bold text-xl mb-2">Nwaigba Ngozi</h3>
 					<span className="mb-2 block">Client service executive</span>
@@ -35,7 +35,7 @@ export default function TeamList() {
 				</div>
 			</div>
 			<div>
-				<Image src={uche} alt="guy on black shirt sitting down" />
+				<Image src={uche} alt="guy on black shirt sitting down" className="mx-auto" />
 				<div className="mt-4">
 					<h3 className="font-bold text-xl mb-2">Ebenyi Uchechukwu</h3>
 					<span className="mb-2 block">Office Assitant</span>

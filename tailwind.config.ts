@@ -48,6 +48,8 @@ const config: Config = {
 			screens: {
 				md: "767px",
 				lg: "1022px",
+				xl: "1279px",
+				xxl: "1400px",
 			},
 			backgroundImage: {
 				openHub: "url('/assets/openHub.png')",

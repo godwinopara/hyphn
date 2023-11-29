@@ -86,7 +86,7 @@ export default function Navbar() {
 						label="Contact Us"
 					/> */}
 				</ul>
-				<button className="xl:hidden" onClick={handleToggleNav}>
+				<button className="lg:hidden" onClick={handleToggleNav}>
 					{!navIsOpen && <Image src={hamburgerMenu} alt="hamburger icon" />}
 					{navIsOpen && <Image src={closeHamburger} alt="hamburger close" />}
 				</button>
@@ -104,7 +104,7 @@ interface NavLinkProp {
 const NavLink = ({ href, currentPath, label }: NavLinkProp) => {
 	return (
 		<li
-			className={`mr-8 cursor-pointer hover:text-yellow ${
+			className={`lg:mr-4 xl:mr-8 cursor-pointer hover:text-yellow ${
 				currentPath === href ? "text-yellow hover:text-white" : ""
 			}`}
 		>

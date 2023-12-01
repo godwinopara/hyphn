@@ -18,7 +18,11 @@ export default function Hero() {
 				touchTracking={false}
 				disableDotsControls
 				disableButtonsControls
-				items={[<FirstSlideHero />, <SecondSlideHero />, <ThirdSlideHero />].map((slide, id) => {
+				items={[
+					<FirstSlideHero key={1} />,
+					<SecondSlideHero key={2} />,
+					<ThirdSlideHero key={3} />,
+				].map((slide, id) => {
 					return <div key={id}>{slide}</div>;
 				})}
 			/>

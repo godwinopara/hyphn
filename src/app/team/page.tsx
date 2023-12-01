@@ -29,8 +29,6 @@ export default function Team() {
 
 				<div className="max-w-desktop mx-auto flex flex-col gap-20">
 					<TeamList />
-					<TeamList />
-					<TeamList />
 				</div>
 			</section>
 		</>

@@ -12,7 +12,7 @@ export default function Partners() {
 	return (
 		<div className="bg-black pb-10">
 			<div className=" bg-white">
-				<div className="py-3 max-w-[1000px] mx-auto md:py-9 px-6 lg:px-0">
+				<div className="py-3 max-w-[900px] mx-auto md:py-9 px-6 lg:px-0">
 					<Marquee>
 						<div className="mr-16">
 							<Image src={flexport} alt="flexport logo" className="w-28" />

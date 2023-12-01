@@ -54,7 +54,7 @@ export default function ContentDesktop() {
 			title: "Top Squad",
 			selected: false,
 			description:
-				"Top Squad is a TV game show where teams face-off against each other in games and recreational activities that border around the social interests on youths. Squads complete in elimination challenges until the top squad is decided. This show is available for sponsorship (this sentence should contain a hyperlink that when its clicked, it will prompt the user to email an inquiry to Hyphn)",
+				"Top Squad is a TV game show where teams face-off against each other in games and recreational activities that border around the social interests on youths. Squads complete in elimination challenges until the top squad is decided. This show is available for sponsorship.",
 		},
 		{
 			id: 4,
@@ -131,13 +131,6 @@ export default function ContentDesktop() {
 			selected: false,
 			description:
 				"The World of Heroes is a live radio show specifically created for Hero lager beer as a platform to propagate the brand’s communication and offers. It is an exciting radio program that infuses comedy, music, culture and current trends to engage and pass across the Hero lager’s message to its target audience.",
-		},
-		{
-			id: 5,
-			title: "Ultimate Football Challenge",
-			selected: false,
-			description:
-				"The Ultimate Football Challenge is an exciting and intriguing live radio game show where listeners call-in and challenge their knowledge on different football topics across the world for a chance to some of the biggest prizes on Nigerian radio.",
 		},
 	]);
 

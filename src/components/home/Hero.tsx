@@ -4,18 +4,21 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import FirstSlideHero from "./FirstSlideHero";
 import SecondSlideHero from "./SecondSlideHero";
 import ThirdSlideHero from "./ThirdSlideHero";
+import arrowLeft from "public/assets/arrow-left.svg";
+import arrowRight from "public/assets/arrow-right.svg";
+import Image from "next/image";
+import { useRef } from "react";
 
 export default function Hero() {
+	const carousel = useRef<AliceCarousel>(null);
+
 	return (
 		<section className="mt-[4.85rem] xl:min-h-[95vh] xl:w-screen bg-black pt-10  pb-5 xl:pt-20 xl:pb-0 xl:mt-0  relative">
 			<AliceCarousel
-				autoPlay
-				autoPlayStrategy="none"
-				autoPlayInterval={3000}
-				animationDuration={1000}
-				animationType="slide"
+				ref={carousel}
+				animationDuration={500}
 				infinite
-				touchTracking={false}
+				mouseTracking
 				disableDotsControls
 				disableButtonsControls
 				items={[
@@ -29,6 +32,21 @@ export default function Hero() {
 
 			<div>
 				<div className="hidden md:block absolute top-0 left-[40%] bg-contain bg-no-repeat bg-heroPattern h-[555.291px] w-[545.595px]"></div>
+			</div>
+
+			<div>
+				<button
+					className="bg-white absolute top-[50%] left-4 p-3 cursor-pointer"
+					onClick={(e) => carousel?.current?.slidePrev(e)}
+				>
+					<Image src={arrowLeft} alt="arrow icon facing left" />
+				</button>
+				<button
+					className="bg-white absolute top-[50%] right-8 p-3 cursor-pointer"
+					onClick={(e) => carousel?.current?.slideNext(e)}
+				>
+					<Image src={arrowRight} alt="arrow icon facing left" />
+				</button>
 			</div>
 		</section>
 	);

@@ -5,11 +5,10 @@ import tv from "public/assets/tv.png";
 import digital from "public/assets/digital-online.png";
 import radio from "public/assets/radio.png";
 import event from "public/assets/event.png";
-import ContentDetailCard from "./ContentDetailCard";
 import ContentCardMobile from "./ContentCardMobile";
 
 export default function ContentMobile() {
-	const [tvContentData, setTvContentData] = useState([
+	const tvContentData = [
 		{
 			id: 1,
 			title: "League of Heroes",
@@ -29,7 +28,7 @@ export default function ContentMobile() {
 			title: "Top Squad",
 			selected: false,
 			description:
-				"Top Squad is a TV game show where teams face-off against each other in games and recreational activities that border around the social interests on youths. Squads complete in elimination challenges until the top squad is decided. This show is available for sponsorship (this sentence should contain a hyperlink that when its clicked, it will prompt the user to email an inquiry to Hyphn)",
+				"Top Squad is a TV game show where teams face-off against each other in games and recreational activities that border around the social interests on youths. Squads complete in elimination challenges until the top squad is decided. This show is available for sponsorship.",
 		},
 		{
 			id: 4,
@@ -38,9 +37,9 @@ export default function ContentMobile() {
 			description:
 				"Naija Untapped is a TV documentary that explores the hidden treasures of the Nigerian leisure and entertainment industry. From nightclubs to lounges, bistros to restaurants, beach houses to art houses, theme parks to parties, Naija Untapped will take viewers on an experience into some of the most exciting places and events where the best of Naija fun and entertainment is served",
 		},
-	]);
+	];
 
-	const [radioContentData, setRadioContentData] = useState([
+	const radioContentData = [
 		{
 			id: 1,
 			title: "15mins Drivetime with TOTAL",
@@ -76,9 +75,9 @@ export default function ContentMobile() {
 			description:
 				"The Ultimate Football Challenge is an exciting and intriguing live radio game show where listeners call-in and challenge their knowledge on different football topics across the world for a chance to some of the biggest prizes on Nigerian radio.",
 		},
-	]);
+	];
 
-	const [digitalContentData, setDigitalContentData] = useState([
+	const digitalContentData = [
 		{
 			id: 1,
 			title: "Ultimate Football Challenge",
@@ -114,14 +113,14 @@ export default function ContentMobile() {
 			description:
 				"The Ultimate Football Challenge is an exciting and intriguing live radio game show where listeners call-in and challenge their knowledge on different football topics across the world for a chance to some of the biggest prizes on Nigerian radio.",
 		},
-	]);
+	];
 
 	return (
 		<section className="py-24 xl:hidden">
 			<div className="px-6">
 				<ContentCardMobile img={tv} title="TV" data={tvContentData} />
 				<ContentCardMobile img={radio} title="RADIO" data={radioContentData} />
-				<ContentCardMobile img={digital} title="DIGITAL/ONLINE" data={tvContentData} />
+				<ContentCardMobile img={digital} title="DIGITAL/ONLINE" data={digitalContentData} />
 				<ContentCardMobile img={event} title="EVENT" data={radioContentData} />
 			</div>
 		</section>

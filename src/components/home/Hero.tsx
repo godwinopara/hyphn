@@ -1,38 +1,11 @@
 "use client";
-
-import HeroCard from "./HeroCard";
-import data from "public/assets/data.png";
-import director from "public/assets/director.png";
-import ignite from "public/assets/ignite.png";
-
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import FirstSlideHero from "./FirstSlideHero";
+import SecondSlideHero from "./SecondSlideHero";
+import ThirdSlideHero from "./ThirdSlideHero";
 
 export default function Hero() {
-	const items = [
-		{
-			id: 1,
-			heading: "Ignite",
-			highlight: "audience engagement",
-			description: "with top-notch content that will maximize your online and offline presence.",
-			heroBg: ignite,
-		},
-		{
-			id: 2,
-			heading: "Transform your",
-			highlight: "content strategy",
-			description: "with data-drive techniques.",
-			heroBg: data,
-		},
-		{
-			id: 3,
-			heading: "Take advantage of the power of",
-			highlight: "compelling stories",
-			description: "to build your brand visibility",
-			heroBg: director,
-		},
-	];
-
 	return (
 		<section className="mt-[4.85rem] xl:min-h-[95vh] xl:w-screen bg-black pt-10  pb-5 xl:pt-20 xl:pb-0 xl:mt-0  relative">
 			<AliceCarousel
@@ -45,9 +18,9 @@ export default function Hero() {
 				touchTracking={false}
 				disableDotsControls
 				disableButtonsControls
-				items={items.map((item) => (
-					<HeroCard key={item.id} {...item} />
-				))}
+				items={[<FirstSlideHero />, <SecondSlideHero />, <ThirdSlideHero />].map((slide, id) => {
+					return <div key={id}>{slide}</div>;
+				})}
 			/>
 
 			<div>

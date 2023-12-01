@@ -14,8 +14,8 @@ export default function WhatWeDoCard({ img, title, description, className }: Wha
 		<div
 			className={`py-10 px-4 bg-white1 rounded-3xl mt-8 md:text-left lg:items-start xl:px-16 ${className}`}
 		>
-			<div className="flex items-center lg:block">
-				<div className="h-[48px] w-[48px] bg-light-yellow lg:h-[88px] lg:w-[88px] flex items-center justify-center rounded-2xl">
+			<div className="flex items-center lg:block mb-5">
+				<div className="h-[48px] w-[48px] mr-3 bg-light-yellow lg:h-[88px] lg:w-[88px] flex items-center justify-center rounded-2xl">
 					<Image src={img} alt="content creation icon" />
 				</div>
 				<h3 className="ml-2 lg:ml-0 text-xl font-semibold lg:text-2xl lg:my-5">{title}</h3>

@@ -5,6 +5,7 @@ import digital from "public/assets/digital-section.png";
 import Image from "next/image";
 import ContentVaultCard from "./ContentVaultCard";
 import arrow from "public/assets/arrow-white.svg";
+import Link from "next/link";
 
 export default function ContentVault() {
 	return (
@@ -46,8 +47,10 @@ export default function ContentVault() {
 				</div>
 
 				<div className="text-white flex justify-center mt-10">
-					<button className="flex items-center justify-center gap-3 z-10 py-4 px-5 hover:bg-yellow rounded-lg">
-						Learn More <Image src={arrow} alt="arrow" />
+					<button className="z-10 py-4 px-5 hover:bg-yellow rounded-lg">
+						<Link href="/content" className="flex items-center justify-center gap-3">
+							Learn More <Image src={arrow} alt="arrow" />
+						</Link>
 					</button>
 				</div>
 			</div>

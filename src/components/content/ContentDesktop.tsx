@@ -204,7 +204,7 @@ export default function ContentDesktop() {
 
 			<div className="mb-24">
 				<div className="flex justify-between items-center mb-16">
-					<h3 className="font-semibold text-3xl text-yellow">DIGITAL/ONLINE</h3>
+					<h3 className="font-semibold text-3xl text-yellow">DIGITAL</h3>
 					<div>View All</div>
 				</div>
 				<div className="grid grid-cols-2 justify-between gap-8">

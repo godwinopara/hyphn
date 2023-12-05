@@ -12,7 +12,7 @@ export default function Footer() {
 			<div className="md:grid grid-cols-3 items-start max-w-desktop mx-auto mb-20">
 				<div className="mb-10 md:mb-0">
 					<Image src={Logo} alt="logo" className="pb-5" />
-					<p className="mb-5 text-xl">
+					<p className="mb-5 text-sm">
 						Hyphn is a comprehensive hub for exceptional content marketing services. We are a
 						content marketing agency focused on delivering remarkable TV, radio, digital, and
 						experiential content that helps businesses captivate audiences.
@@ -27,7 +27,7 @@ export default function Footer() {
 				<div className="mb-10 md:flex justify-center  md:mb-0 mx-auto w-full">
 					<div>
 						<h3 className="font-semibold text-xl mb-4">Quick Links</h3>
-						<ul className="flex flex-col gap-6 text-lg">
+						<ul className="flex flex-col gap-6 text-md">
 							<li>
 								<Link href="/#service">Services</Link>
 							</li>
@@ -45,7 +45,7 @@ export default function Footer() {
 				</div>
 				<div className="mx-auto">
 					<h3 className="font-semibold text-xl mb-7">Address</h3>
-					<p className="text-xl">
+					<p className="text-base">
 						Hyphn Head Office.
 						<br />
 						434b, Damilola Fashade street off Titilayo Sector,
@@ -54,7 +54,7 @@ export default function Footer() {
 					</p>
 				</div>
 			</div>
-			<div className="max-w-desktop mx-auto text-xl">Copyright Design Agency 2023</div>
+			<div className="max-w-desktop mx-auto text-base">Copyright Design Agency 2023</div>
 		</footer>
 	);
 }

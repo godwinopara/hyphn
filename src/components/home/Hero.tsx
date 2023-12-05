@@ -4,8 +4,8 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import FirstSlideHero from "./FirstSlideHero";
 import SecondSlideHero from "./SecondSlideHero";
 import ThirdSlideHero from "./ThirdSlideHero";
-import arrowLeft from "public/assets/arrow-left.svg";
-import arrowRight from "public/assets/arrow-right.svg";
+import arrowLeft from "public/assets/arrow-left-white.svg";
+import arrowRight from "public/assets/arrow-right-white.svg";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -30,19 +30,19 @@ export default function Hero() {
 				})}
 			/>
 
-			<div>
+			{/* <div>
 				<div className="hidden md:block absolute top-0 left-[40%] bg-contain bg-no-repeat bg-heroPattern h-[555.291px] w-[545.595px]"></div>
-			</div>
+			</div> */}
 
 			<div>
 				<button
-					className="bg-white absolute top-[50%] left-4 p-3 cursor-pointer"
+					className="border border-light-yellow absolute bottom-10 left-[42%] px-5 py-4 cursor-pointer rounded-[100%] hover:bg-yellow"
 					onClick={(e) => carousel?.current?.slidePrev(e)}
 				>
 					<Image src={arrowLeft} alt="arrow icon facing left" />
 				</button>
 				<button
-					className="bg-white absolute top-[50%] right-8 p-3 cursor-pointer"
+					className="border border-light-yellow  absolute bottom-10 right-[49%] px-5 py-4 cursor-pointer rounded-[100%] hover:bg-yellow"
 					onClick={(e) => carousel?.current?.slideNext(e)}
 				>
 					<Image src={arrowRight} alt="arrow icon facing left" />

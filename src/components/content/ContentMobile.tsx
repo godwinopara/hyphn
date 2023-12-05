@@ -120,7 +120,7 @@ export default function ContentMobile() {
 			<div className="px-6">
 				<ContentCardMobile img={tv} title="TV" data={tvContentData} />
 				<ContentCardMobile img={radio} title="RADIO" data={radioContentData} />
-				<ContentCardMobile img={digital} title="DIGITAL/ONLINE" data={digitalContentData} />
+				<ContentCardMobile img={digital} title="DIGITAL" data={digitalContentData} />
 				<ContentCardMobile img={event} title="EVENT" data={radioContentData} />
 			</div>
 		</section>

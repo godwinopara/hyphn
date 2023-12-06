@@ -62,7 +62,7 @@ const config: Config = {
 				aboutHero: "url('/assets/aboutBg.png')",
 				darkGradient:
 					"linear-gradient(0deg, rgba(16, 16, 16, 0.43) -0.08%, rgba(16, 16, 16, 0.80) 110.57%)",
-				contentVaultBg: "url('/assets/content-vault-bg.png')",
+				contentVaultBg: "url('/assets/content-vault-bg.jpg')",
 				dataHeroBg: "url('/assets/data.png')",
 				directorBg: "url('/assets/director.png')",
 				igniteBg: "url('/assets/ignite.png')",

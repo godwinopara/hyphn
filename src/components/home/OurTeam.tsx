@@ -1,10 +1,3 @@
-import Image from "next/image";
-import huston1 from "public/assets/huston1.png";
-import huston2 from "public/assets/huston2.png";
-import huston3 from "public/assets/huston3.png";
-import facebook from "public/assets/facebook-color.svg";
-import instagram from "public/assets/instagram-color.svg";
-import linkedin from "public/assets/linkedin-color.svg";
 import TeamList from "../TeamList";
 
 export default function OurTeam() {

@@ -60,6 +60,7 @@ const config: Config = {
 				patternRight: "url('/assets/patternRight.svg')",
 				patternLeft: "url('/assets/patternLeft.svg')",
 				aboutHero: "url('/assets/aboutBg.png')",
+				teamHero: "url('/assets/team-bg.png')",
 				darkGradient:
 					"linear-gradient(0deg, rgba(16, 16, 16, 0.43) -0.08%, rgba(16, 16, 16, 0.80) 110.57%)",
 				contentVaultBg: "url('/assets/content-vault-bg.jpg')",

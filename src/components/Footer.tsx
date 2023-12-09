@@ -12,7 +12,7 @@ export default function Footer() {
 			<div className="md:grid grid-cols-3 items-start max-w-desktop mx-auto mb-20">
 				<div className="mb-10 md:mb-0">
 					<Image src={Logo} alt="logo" className="pb-5" />
-					<p className="mb-5 text-sm">
+					<p className="mb-5">
 						Hyphn is a comprehensive hub for exceptional content marketing services. We are a
 						content marketing agency focused on delivering remarkable TV, radio, digital, and
 						experiential content that helps businesses captivate audiences.

@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
 				<Image
 					src={underline}
 					alt="zig zag underline"
-					className="left-[12%] absolute top-12 md:left-[30%] xl:left-[38%]"
+					className="left-[12%] absolute top-12 md:left-[35%] xl:left-[38%]"
 				/>
 			</div>
 

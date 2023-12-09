@@ -19,7 +19,7 @@ export default function Services() {
 						<Image
 							src={underline}
 							alt="zig zag underline"
-							className="left-[5%] absolute top-14 md:left-[30%] xl:left-[39%]"
+							className="left-[5%] absolute top-14 md:left-[35%] xl:left-[39%]"
 						/>
 					</div>
 				</div>

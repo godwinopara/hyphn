@@ -30,19 +30,15 @@ export default function Hero() {
 				})}
 			/>
 
-			{/* <div>
-				<div className="hidden md:block absolute top-0 left-[40%] bg-contain bg-no-repeat bg-heroPattern h-[555.291px] w-[545.595px]"></div>
-			</div> */}
-
-			<div>
+			<div className="flex justify-center gap-5">
 				<button
-					className="border border-light-yellow absolute bottom-10 left-[42%] px-5 py-4 cursor-pointer rounded-[100%] hover:bg-yellow"
+					className="border border-light-yellow xl:absolute bottom-10 xl:left-[42%] px-5 py-4 cursor-pointer rounded-[100%] hover:bg-yellow"
 					onClick={(e) => carousel?.current?.slidePrev(e)}
 				>
 					<Image src={arrowLeft} alt="arrow icon facing left" />
 				</button>
 				<button
-					className="border border-light-yellow  absolute bottom-10 right-[49%] px-5 py-4 cursor-pointer rounded-[100%] hover:bg-yellow"
+					className="border border-light-yellow xl:absolute bottom-10 xl:right-[49%] px-5 py-4 cursor-pointer rounded-[100%] hover:bg-yellow"
 					onClick={(e) => carousel?.current?.slideNext(e)}
 				>
 					<Image src={arrowRight} alt="arrow icon facing left" />

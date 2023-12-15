@@ -1,5 +1,5 @@
 import { MouseEventHandler } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import user from "public/assets/user.svg";
 
 type ContentType = {
@@ -7,6 +7,7 @@ type ContentType = {
 	title: string;
 	selected: boolean;
 	description: string;
+	img: string | StaticImageData;
 };
 
 type ContentCardProps = {
@@ -14,7 +15,8 @@ type ContentCardProps = {
 	title: string;
 	selected: boolean;
 	description: string;
-	onClick: MouseEventHandler<HTMLDivElement> | ((content: ContentType) => void);
+	img: string | StaticImageData;
+	onClick: (content: ContentType) => void;
 };
 
 export default function ContentCard({
@@ -22,9 +24,10 @@ export default function ContentCard({
 	title,
 	selected,
 	description,
+	img,
 	onClick,
 }: ContentCardProps) {
-	const content = { id, title, selected, description };
+	const content = { id, title, selected, description, img };
 
 	const handleClick = () => {
 		if (typeof onClick === "function") {
@@ -42,6 +45,7 @@ export default function ContentCard({
 				<Image src={user} alt="user icon" />
 				<span className="text-sm">By Admin</span>
 				<span className="text-sm">20 November 2023</span>
+				iI
 			</div>
 			<div>
 				<h4 className="font-bold text-lg mb-1">{title}</h4>

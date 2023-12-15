@@ -1,17 +1,23 @@
 import Image, { StaticImageData } from "next/image";
 import user from "public/assets/user.svg";
 import arrow from "public/assets/arrow.svg";
+import placeholder from "public/assets/placeholder1.png";
 
 type ContentDetailCardProps = {
 	title: string;
-	img: string | StaticImageData;
+	img?: string | StaticImageData;
 	description: string;
 };
 
 export default function ContentDetailCard({ title, img, description }: ContentDetailCardProps) {
 	return (
 		<div className="mb-10 p-7 border border-black w-full xl:mb-0">
-			<Image src={img} alt="chase wedding" />
+			{img ? (
+				<Image src={img} alt="chase wedding" className="mx-auto" />
+			) : (
+				<Image src={placeholder} alt="chase wedding" className="mx-auto" />
+			)}
+			{/* <Image src={img} alt="chase wedding" className="mx-auto" /> */}
 			<div className="flex items-center gap-4 my-6">
 				<Image src={user} alt="user icon" />
 				<span className="text-sm">By Admin</span>

@@ -1,29 +1,35 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ContentCard from "@/components/content/ContentCard";
 import ContentDetailCard from "@/components/content/ContentDetailCard";
-import tv from "public/assets/tv.png";
-import digital from "public/assets/digital-online.png";
-import radio from "public/assets/radio.png";
-import event from "public/assets/event.png";
-import Link from "next/link";
+
+import worldOfHeroes from "public/assets/hero-world-of-heroes.png";
+import wisemama from "public/assets/wise-mama.png";
+import naijaUntapped from "public/assets/naija-untapped.png";
+import drive from "public/assets/15min.png";
+import topsquad from "public/assets/top-squad-all.png";
+
+import { StaticImageData } from "next/image";
 
 type ContentType = {
 	id: number;
 	title: string;
 	description: string;
 	selected: boolean;
+	img: StaticImageData;
 };
 
 export default function ContentDesktop() {
 	const [currentTvContent, setCurrentTvContent] = useState({
 		title: "Naija Untapped",
+		img: naijaUntapped,
 		description:
 			"Naija Untapped is a TV documentary that explores the hidden treasures of the Nigerian leisure and entertainment industry. From nightclubs to lounges, bistros to restaurants, beach houses to art houses, theme parks to parties, Naija Untapped will take viewers on an experience into some of the most exciting places and events where the best of Naija fun and entertainment is served",
 	});
 	const [currentRadioContent, setCurrentRadioContent] = useState({
 		title: "King of Football Radio Show",
+		img: drive,
 		description:
 			"The King of Football Radio Show is specifically designed for Budweiser as a platform for the brans to leverage their sponsorship of the English Premier league. In the live radio show, listeners call in to test their knowledge of the premiership and stand an opportunity to win amazing prizes. ",
 	});
@@ -46,6 +52,7 @@ export default function ContentDesktop() {
 			id: 2,
 			title: "Naija Untapped",
 			selected: false,
+			img: naijaUntapped,
 			description:
 				"Naija Untapped is a TV documentary that explores the hidden treasures of the Nigerian leisure and entertainment industry. From nightclubs to lounges, bistros to restaurants, beach houses to art houses, theme parks to parties, Naija Untapped will take viewers on an experience into some of the most exciting places and events where the best of Naija fun and entertainment is served",
 		},
@@ -53,15 +60,9 @@ export default function ContentDesktop() {
 			id: 3,
 			title: "Top Squad",
 			selected: false,
+			img: topsquad,
 			description:
 				"Top Squad is a TV game show where teams face-off against each other in games and recreational activities that border around the social interests on youths. Squads complete in elimination challenges until the top squad is decided. This show is available for sponsorship.",
-		},
-		{
-			id: 4,
-			title: "Naija Untapped",
-			selected: false,
-			description:
-				"Naija Untapped is a TV documentary that explores the hidden treasures of the Nigerian leisure and entertainment industry. From nightclubs to lounges, bistros to restaurants, beach houses to art houses, theme parks to parties, Naija Untapped will take viewers on an experience into some of the most exciting places and events where the best of Naija fun and entertainment is served",
 		},
 	]);
 
@@ -69,7 +70,9 @@ export default function ContentDesktop() {
 		{
 			id: 1,
 			title: "15mins Drivetime with TOTAL",
+			img: drive,
 			selected: true,
+
 			description:
 				"15minutes Drivetime with Total Energies is a live radio show created for Total to give free auto care education and recommendations. The show featured expert on common auto care challenges of the Nigerian user with analysis with recommendations on how to overcome them. ",
 		},
@@ -77,6 +80,7 @@ export default function ContentDesktop() {
 			id: 2,
 			title: "Wise Mama",
 			selected: false,
+			img: wisemama,
 			description:
 				"Wise Mama is a radio drama series created for Tasty Tom tomato brand. It’s the story of how a 63yr old grandmother is attempting to impact her wisdom on a young generation of mothers who are going through the challenges of being a wife, a mother and a superwoman.",
 		},
@@ -90,6 +94,7 @@ export default function ContentDesktop() {
 		{
 			id: 4,
 			title: "World of Heroes Radio Show",
+			img: worldOfHeroes,
 			selected: false,
 			description:
 				"The World of Heroes is a live radio show specifically created for Hero lager beer as a platform to propagate the brand’s communication and offers. It is an exciting radio program that infuses comedy, music, culture and current trends to engage and pass across the Hero lager’s message to its target audience.",
@@ -111,45 +116,30 @@ export default function ContentDesktop() {
 			description:
 				"Excite yourself in the Ultimate Football Challenge experience by downloading the app here or being part of the social media community on Facebook, X and Instagram……",
 		},
-		{
-			id: 2,
-			title: "Wise Mama",
-			selected: false,
-			description:
-				"Wise Mama is a radio drama series created for Tasty Tom tomato brand. It’s the story of how a 63yr old grandmother is attempting to impact her wisdom on a young generation of mothers who are going through the challenges of being a wife, a mother and a superwoman.",
-		},
-		{
-			id: 3,
-			title: "King of Football Radio Show",
-			selected: false,
-			description:
-				"The King of Football Radio Show is specifically designed for Budweiser as a platform for the brans to leverage their sponsorship of the English Premier league. In the live radio show, listeners call in to test their knowledge of the premiership and stand an opportunity to win amazing prizes. ",
-		},
-		{
-			id: 4,
-			title: "World of Heroes Radio Show",
-			selected: false,
-			description:
-				"The World of Heroes is a live radio show specifically created for Hero lager beer as a platform to propagate the brand’s communication and offers. It is an exciting radio program that infuses comedy, music, culture and current trends to engage and pass across the Hero lager’s message to its target audience.",
-		},
 	]);
 
-	const handleClick = (content: ContentType) => {
-		setCurrentTvContent({ ...content });
-		const newtvContentData = tvContentData.map((data) => {
-			if (data.id === content.id) {
-				return { ...data, selected: true };
-			} else {
-				return { ...data, selected: false };
-			}
-		});
-		setTvContentData(newtvContentData);
+	useEffect(() => {
+		console.log(currentTvContent);
+	}, [currentTvContent]);
+
+	const handleClick = (contentvalue: ContentType) => {
+		if (contentvalue) {
+			setCurrentTvContent({ ...contentvalue });
+			const newtvContentData = tvContentData.map((data) => {
+				if (data.id === contentvalue.id) {
+					return { ...data, selected: true };
+				} else {
+					return { ...data, selected: false };
+				}
+			});
+			setTvContentData(newtvContentData);
+		}
 	};
 
-	const handleClickRadio = (content: ContentType) => {
-		setCurrentRadioContent({ ...content });
+	const handleClickRadio = (contentvalue: ContentType) => {
+		setCurrentRadioContent({ ...contentvalue });
 		const newRadioContentData = radioContentData.map((data) => {
-			if (data.id === content.id) {
+			if (data.id === contentvalue.id) {
 				return { ...data, selected: true };
 			} else {
 				return { ...data, selected: false };
@@ -178,7 +168,7 @@ export default function ContentDesktop() {
 					<div>View All</div>
 				</div>
 				<div className="grid grid-cols-2 justify-between gap-8">
-					<ContentDetailCard img={tv} {...currentTvContent} />
+					<ContentDetailCard {...currentTvContent} />
 					<div>
 						{tvContentData.map((content) => {
 							return <ContentCard key={content.id} {...content} onClick={handleClick} />;
@@ -198,7 +188,7 @@ export default function ContentDesktop() {
 							return <ContentCard key={content.id} {...content} onClick={handleClickRadio} />;
 						})}
 					</div>
-					<ContentDetailCard img={radio} {...currentRadioContent} />
+					<ContentDetailCard {...currentRadioContent} />
 				</div>
 			</div>
 
@@ -208,7 +198,7 @@ export default function ContentDesktop() {
 					<div>View All</div>
 				</div>
 				<div className="grid grid-cols-2 justify-between gap-8">
-					<ContentDetailCard img={digital} {...currentDigitalContent} />
+					<ContentDetailCard {...currentDigitalContent} />
 					<div>
 						{digitalContentData.map((content) => {
 							return <ContentCard key={content.id} {...content} onClick={handleClickDigital} />;
@@ -216,7 +206,7 @@ export default function ContentDesktop() {
 					</div>
 				</div>
 			</div>
-
+			{/* 
 			<div className="mb-24">
 				<div className="flex justify-between items-center mb-16">
 					<h3 className="font-semibold text-3xl text-yellow">EVENT</h3>
@@ -228,9 +218,9 @@ export default function ContentDesktop() {
 							return <ContentCard key={content.id} {...content} onClick={handleClickRadio} />;
 						})}
 					</div>
-					<ContentDetailCard img={event} {...currentRadioContent} />
+					<ContentDetailCard {...currentRadioContent} />
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }

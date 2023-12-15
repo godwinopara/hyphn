@@ -19,7 +19,6 @@ export default function ContentMobile() {
 			id: 1,
 			title: "League of Heroes",
 			selected: true,
-			img: worldOfHeroes,
 			description:
 				"League of Heroes was a 15mins TV show specifically created for Hero Lager beer as platform for the brand to leverage their sponsorship of the NPFL in 2021/2022. The show was a weekly review of the Nigerian premier league and highlights of Hero beer’s participation in the sponsorship.",
 		},

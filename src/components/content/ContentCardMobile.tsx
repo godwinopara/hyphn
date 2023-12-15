@@ -2,12 +2,17 @@ import { StaticImageData } from "next/image";
 import ContentDetailCard from "./ContentDetailCard";
 
 type ContentCardMobileProps = {
-	data: { id: number; title: string; selected: boolean; description: string }[];
+	data: {
+		id: number;
+		title: string;
+		selected: boolean;
+		description: string;
+		img?: StaticImageData | string;
+	}[];
 	title: string;
-	img: StaticImageData | string;
 };
 
-export default function ContentCardMobile({ data, title, img }: ContentCardMobileProps) {
+export default function ContentCardMobile({ data, title }: ContentCardMobileProps) {
 	return (
 		<div className="mb-24">
 			<div className="flex justify-between items-center mb-16">
@@ -16,10 +21,11 @@ export default function ContentCardMobile({ data, title, img }: ContentCardMobil
 			</div>
 			<div className="md:grid md:grid-cols-2 gap-6">
 				{data.map((content) => {
+					console.log(data);
 					return (
 						<ContentDetailCard
 							key={content.id}
-							img={img}
+							img={content.img}
 							title={content.title}
 							description={content.description}
 						/>

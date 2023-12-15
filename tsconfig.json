@@ -28,7 +28,9 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"src/components/Example.jsx",
-		"src/components/content/ContentDesktop.jsx"
+		"src/components/content/ContentDesktop.jsx",
+		"src/components/content/ContentCard.jsx",
+		"src/components/content/ContentCardMobile.jsx"
 	],
 	"exclude": ["node_modules"]
 }

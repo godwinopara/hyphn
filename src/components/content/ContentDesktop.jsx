@@ -12,14 +12,6 @@ import topsquad from "public/assets/top-squad-all.png";
 
 import { StaticImageData } from "next/image";
 
-type ContentType = {
-	id: number;
-	title: string;
-	description: string;
-	selected: boolean;
-	img: StaticImageData;
-};
-
 export default function ContentDesktop() {
 	const [currentTvContent, setCurrentTvContent] = useState({
 		title: "Naija Untapped",
@@ -114,32 +106,27 @@ export default function ContentDesktop() {
 			title: "Ultimate Football Challenge",
 			selected: true,
 			description:
-				"Excite yourself in the Ultimate Football Challenge experience by downloading the app here or being part of the social media community on Facebook, X and Instagram……",
+				"Excite yourself in the Ultimate Football Challenge experience by downloading the app here or being part of the social media community on Facebook, X and Instagram",
 		},
 	]);
 
-	useEffect(() => {
-		console.log(currentTvContent);
-	}, [currentTvContent]);
-
-	const handleClick = (contentvalue: ContentType) => {
-		if (contentvalue) {
-			setCurrentTvContent({ ...contentvalue });
-			const newtvContentData = tvContentData.map((data) => {
-				if (data.id === contentvalue.id) {
-					return { ...data, selected: true };
-				} else {
-					return { ...data, selected: false };
-				}
-			});
-			setTvContentData(newtvContentData);
-		}
+	const handleClick = (content) => {
+		console.log(content);
+		setCurrentTvContent({ ...content });
+		const newtvContentData = tvContentData.map((data) => {
+			if (data.id === content.id) {
+				return { ...data, selected: true };
+			} else {
+				return { ...data, selected: false };
+			}
+		});
+		setTvContentData(newtvContentData);
 	};
 
-	const handleClickRadio = (contentvalue: ContentType) => {
-		setCurrentRadioContent({ ...contentvalue });
+	const handleClickRadio = (content) => {
+		setCurrentRadioContent({ ...content });
 		const newRadioContentData = radioContentData.map((data) => {
-			if (data.id === contentvalue.id) {
+			if (data.id === content.id) {
 				return { ...data, selected: true };
 			} else {
 				return { ...data, selected: false };
@@ -148,7 +135,7 @@ export default function ContentDesktop() {
 		setRadioContentData(newRadioContentData);
 	};
 
-	const handleClickDigital = (content: ContentType) => {
+	const handleClickDigital = (content) => {
 		setCurrentDigitalContent({ ...content });
 		const newDigitalContentData = digitalContentData.map((data) => {
 			if (data.id === content.id) {
@@ -171,7 +158,9 @@ export default function ContentDesktop() {
 					<ContentDetailCard {...currentTvContent} />
 					<div>
 						{tvContentData.map((content) => {
-							return <ContentCard key={content.id} {...content} onClick={handleClick} />;
+							return (
+								<ContentCard key={content.id} {...content} onClick={() => handleClick(content)} />
+							);
 						})}
 					</div>
 				</div>
@@ -185,7 +174,13 @@ export default function ContentDesktop() {
 				<div className="grid grid-cols-2 justify-between gap-8">
 					<div>
 						{radioContentData.map((content) => {
-							return <ContentCard key={content.id} {...content} onClick={handleClickRadio} />;
+							return (
+								<ContentCard
+									key={content.id}
+									{...content}
+									onClick={() => handleClickRadio(content)}
+								/>
+							);
 						})}
 					</div>
 					<ContentDetailCard {...currentRadioContent} />
@@ -201,7 +196,13 @@ export default function ContentDesktop() {
 					<ContentDetailCard {...currentDigitalContent} />
 					<div>
 						{digitalContentData.map((content) => {
-							return <ContentCard key={content.id} {...content} onClick={handleClickDigital} />;
+							return (
+								<ContentCard
+									key={content.id}
+									{...content}
+									onClick={() => handleClickDigital(content)}
+								/>
+							);
 						})}
 					</div>
 				</div>

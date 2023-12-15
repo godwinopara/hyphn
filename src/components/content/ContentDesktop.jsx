@@ -206,21 +206,6 @@ export default function ContentDesktop() {
 					</div>
 				</div>
 			</div>
-			{/* 
-			<div className="mb-24">
-				<div className="flex justify-between items-center mb-16">
-					<h3 className="font-semibold text-3xl text-yellow">EVENT</h3>
-					<div>View All</div>
-				</div>
-				<div className="grid grid-cols-2 justify-between gap-8">
-					<div>
-						{radioContentData.map((content) => {
-							return <ContentCard key={content.id} {...content} onClick={handleClickRadio} />;
-						})}
-					</div>
-					<ContentDetailCard {...currentRadioContent} />
-				</div>
-			</div> */}
 		</div>
 	);
 }

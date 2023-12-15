@@ -16,7 +16,7 @@ type ContentCardProps = {
 	selected: boolean;
 	description: string;
 	img: string | StaticImageData;
-	onClick: (content: ContentType) => void;
+	onClick: MouseEventHandler<HTMLDivElement> | ((content: ContentType) => void);
 };
 
 export default function ContentCard({
@@ -29,14 +29,20 @@ export default function ContentCard({
 }: ContentCardProps) {
 	const content = { id, title, selected, description, img };
 
-	const handleClick = () => {
+	const handleClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 		if (typeof onClick === "function") {
-			(onClick as (content: ContentType) => void)(content);
+			(onClick as (content: ContentType) => void)({
+				id,
+				title,
+				selected,
+				description,
+				img,
+			});
 		}
 	};
 	return (
 		<div
-			onClick={handleClick}
+			onClick={(event) => handleClick}
 			className={`border-b hover:bg-gray4 cursor-pointer border-black mb-4 p-6 last:mb-0 ${
 				selected ? "bg-gray4" : ""
 			}`}
